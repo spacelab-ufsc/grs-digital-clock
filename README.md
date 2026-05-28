@@ -1,6 +1,6 @@
-# SpaceLab Document Template
+# GRS Digital Clock Documentation
 
-This a LaTeX template to use in the SpaceLab projects.
+This is the documentation dor the precise digital clock project for mission control center.
 
 ## Dependencies
 
