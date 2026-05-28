@@ -1,0 +1,289 @@
+%
+% requirements.tex
+%
+
+\chapter{Requirements} \label{ch:requirements}
+
+All requirements follow the format used in other SpaceLab subsystem documents. Each requirement carries a unique identifier, a type, a priority level (High / Low), a plain-English description, the rationale for inclusion, and the verification method.
+
+\section{Requirement Types and Verification Methods}
+
+\begin{table}[H]
+    \caption{Requirement types.}
+    \label{tab:req-types}
+    \begin{center}
+        \begin{tabular}{C{3cm}L{10cm}}
+            \toprule[1.5pt]
+            \textbf{Type} & \textbf{Description} \\
+            \midrule
+            Mission       & High-level objectives the clock must fulfil for the laboratory. \\
+            Functional    & Observable behaviours the clock shall exhibit during operation. \\
+            Physical      & Constraints on dimensions, mass, materials, and visual appearance. \\
+            Environment   & Operating conditions (temperature, humidity, power environment). \\
+            Operational   & Power, brightness, user-interaction, and status-indication requirements. \\
+            Interface     & External electrical/data interfaces the clock shall provide. \\
+            Design        & Constraints on tools, architecture, and implementation choices. \\
+            Mechanical    & Mounting, enclosure fastening, and structural integrity requirements. \\
+            \bottomrule[1.5pt]
+        \end{tabular}
+    \end{center}
+\end{table}
+
+\begin{table}[H]
+    \caption{Verification methods.}
+    \label{tab:verif-methods}
+    \begin{center}
+        \begin{tabular}{C{3cm}L{10cm}}
+            \toprule[1.5pt]
+            \textbf{Method} & \textbf{Description} \\
+            \midrule
+            Inspection    & Visual examination or review of design artefacts (schematics, PCB, documents). \\
+            Testing       & Measurement or functional test performed on the physical hardware. \\
+            Analysis      & Engineering calculation, simulation, or analytical model. \\
+            Demonstration & Witnessed operation of a specific feature without instrumentation. \\
+            \bottomrule[1.5pt]
+        \end{tabular}
+    \end{center}
+\end{table}
+
+% ─────────────────────────────────────────────────────────────────────────────
+% Color definitions for the requirements table
+% ─────────────────────────────────────────────────────────────────────────────
+\definecolor{colMission}    {HTML}{6C5CE7}
+\definecolor{colFunctional} {HTML}{00B894}
+\definecolor{colPhysical}   {HTML}{0984E3}
+\definecolor{colEnvironment}{HTML}{E17055}
+\definecolor{colOperational}{HTML}{FDCB6E}
+\definecolor{colInterface}  {HTML}{A29BFE}
+\definecolor{colDesign}     {HTML}{55EFC4}
+\definecolor{colMechanical} {HTML}{D63031}
+\definecolor{colHigh}       {HTML}{C0392B}
+\definecolor{colLow}        {HTML}{7F8C8D}
+\definecolor{colInspection} {HTML}{F39C12}
+\definecolor{colTesting}    {HTML}{8E44AD}
+\definecolor{colAnalysis}   {HTML}{2980B9}
+\definecolor{colDemonstration}{HTML}{27AE60}
+\definecolor{colHeader}     {HTML}{4472C4}
+\definecolor{rowalt}        {HTML}{D6E4F7}
+
+\newcommand{\typebadge}[2]{\cellcolor{#1}\textcolor{white}{\textbf{\small #2}}}
+\newcommand{\opbadge}[2]{\cellcolor{#1}\textcolor{black}{\textbf{\small #2}}}
+\newcommand{\verifbadge}[2]{\cellcolor{#1}\textcolor{white}{\textbf{\small #2}}}
+\newcommand{\levelbadge}[2]{\cellcolor{#1}\textcolor{white}{\textbf{\small #2}}}
+\newcommand{\headerc}[1]{\cellcolor{colHeader}\textcolor{white}{\textbf{#1}}}
+
+\section{Requirements Table}
+
+The full requirements list is presented in Table~\ref{tab:requirements} (landscape, next pages).
+
+\newpage
+\begin{landscape}
+
+% Column widths for landscape A4 (247mm content):
+% ID:32mm  Type:22mm  Level:16mm  Description:85mm  Rationale:62mm  Verif:28mm = 245mm
+\setlength{\LTcapwidth}{\linewidth}
+\begin{longtable}{C{3.5cm} C{2.4cm} C{1.7cm} L{8.5cm} L{5.7cm} C{2.5cm}}
+
+    \caption{Ground station clock requirements.}
+    \label{tab:requirements} \\
+
+    \toprule[1.5pt]
+    \headerc{ID} & \headerc{Type} & \headerc{Level} & \headerc{Description} & \headerc{Rationale} & \headerc{Verification} \\
+    \midrule
+    \endfirsthead
+
+    \multicolumn{6}{c}{\small\textit{Table~\ref{tab:requirements} -- continued from previous page}} \\[4pt]
+    \toprule[1.5pt]
+    \headerc{ID} & \headerc{Type} & \headerc{Level} & \headerc{Description} & \headerc{Rationale} & \headerc{Verification} \\
+    \midrule
+    \endhead
+
+    \midrule
+    \multicolumn{6}{r}{\small\textit{Continued on next page\ldots}} \\
+    \endfoot
+
+    \bottomrule[1.5pt]
+    \endlastfoot
+
+    % ── MISSION ──────────────────────────────────────────────────────────────
+    GS-CLK-REQ-000 & \typebadge{colMission}{Mission} & \levelbadge{colHigh}{High}
+        & The clock shall be designed and fabricated entirely in-house by the laboratory team.
+        & Ensures full technical ownership, traceability, and reproducibility within the lab.
+        & \verifbadge{colInspection}{Inspection} \\[2pt]
+
+    \rowcolor{rowalt}
+    GS-CLK-REQ-001 & \typebadge{colMission}{Mission} & \levelbadge{colHigh}{High}
+        & The clock shall serve as the primary time reference displayed in the ground station / control room.
+        & Provides operators with a clear, unambiguous time reference during satellite passes.
+        & \verifbadge{colInspection}{Inspection} \\[2pt]
+
+    % ── FUNCTIONAL ───────────────────────────────────────────────────────────
+    GS-CLK-REQ-100 & \typebadge{colFunctional}{Functional} & \levelbadge{colHigh}{High}
+        & The clock shall display hours, minutes, and seconds simultaneously using a 6-digit format (HH:MM:SS).
+        & Seconds resolution is required for precise tracking and command scheduling.
+        & \verifbadge{colTesting}{Testing} \\[2pt]
+
+    \rowcolor{rowalt}
+    GS-CLK-REQ-101 & \typebadge{colFunctional}{Functional} & \levelbadge{colHigh}{High}
+        & The clock shall synchronise its internal time via NTP over an Ethernet connection.
+        & Ensures traceable UTC synchronisation without manual adjustment.
+        & \verifbadge{colTesting}{Testing} \\[2pt]
+
+    GS-CLK-REQ-102 & \typebadge{colFunctional}{Functional} & \levelbadge{colLow}{Low}
+        & The clock shall alternately display ambient temperature alongside the current time.
+        & Provides environmental monitoring directly on the ground station display.
+        & \verifbadge{colTesting}{Testing} \\[2pt]
+
+    \rowcolor{rowalt}
+    GS-CLK-REQ-103 & \typebadge{colFunctional}{Functional} & \levelbadge{colLow}{Low}
+        & The clock shall apply automatic Daylight Saving Time (DST) adjustment according to the Brazilian official calendar.
+        & Avoids manual reconfiguration every DST transition.
+        & \verifbadge{colTesting}{Testing} \\[2pt]
+
+    GS-CLK-REQ-104 & \typebadge{colFunctional}{Functional} & \levelbadge{colLow}{Low}
+        & The clock shall operate autonomously (free-running from its internal RTC) when the Ethernet network is unavailable.
+        & Guarantees continued display even during network outages.
+        & \verifbadge{colTesting}{Testing} \\[2pt]
+
+    \rowcolor{rowalt}
+    GS-CLK-REQ-105 & \typebadge{colFunctional}{Functional} & \levelbadge{colLow}{Low}
+        & The clock shall retain the correct time for at least 72~hours during a power outage using a backup battery or supercapacitor.
+        & Prevents time loss after brief power interruptions common in laboratory environments.
+        & \verifbadge{colTesting}{Testing} \\[2pt]
+
+    % ── PHYSICAL ─────────────────────────────────────────────────────────────
+    GS-CLK-REQ-200 & \typebadge{colPhysical}{Physical} & \levelbadge{colHigh}{High}
+        & The clock enclosure shall not exceed 600~mm $\times$ 160~mm $\times$ 80~mm (W~$\times$~H~$\times$~D).
+        & Sized to fit the available wall space in the ground station, inspired by the Pro-Digital RDI-2M reference clock.
+        & \verifbadge{colInspection}{Inspection} \\[2pt]
+
+    \rowcolor{rowalt}
+    GS-CLK-REQ-201 & \typebadge{colPhysical}{Physical} & \levelbadge{colHigh}{High}
+        & The display shall use large 7-segment LED digits with a minimum digit height of 57~mm.
+        & Ensures visibility up to 40~m across the control room.
+        & \verifbadge{colInspection}{Inspection} \\[2pt]
+
+    GS-CLK-REQ-202 & \typebadge{colPhysical}{Physical} & \levelbadge{colLow}{Low}
+        & The enclosure shall be fabricated from metal (aluminium or steel) with a black or dark-grey finish.
+        & Provides electromagnetic shielding and a professional appearance matching lab equipment.
+        & \verifbadge{colInspection}{Inspection} \\[2pt]
+
+    \rowcolor{rowalt}
+    GS-CLK-REQ-203 & \typebadge{colPhysical}{Physical} & \levelbadge{colLow}{Low}
+        & The total mass of the assembled clock (including enclosure and bracket) shall not exceed 3~kg.
+        & Keeps installation simple with standard wall anchors.
+        & \verifbadge{colInspection}{Inspection} \\[2pt]
+
+    % ── ENVIRONMENT ──────────────────────────────────────────────────────────
+    GS-CLK-REQ-300 & \typebadge{colEnvironment}{Environment} & \levelbadge{colHigh}{High}
+        & The clock shall operate correctly in the temperature range 0\,\textdegree{}C to 50\,\textdegree{}C.
+        & Covers the expected indoor operating envelope of the ground station room.
+        & \verifbadge{colTesting}{Testing} \\[2pt]
+
+    \rowcolor{rowalt}
+    GS-CLK-REQ-301 & \typebadge{colEnvironment}{Environment} & \levelbadge{colLow}{Low}
+        & The clock shall include an onboard temperature sensor with a
+        measurement range of $0$\,\textdegree{}C to 55\,\textdegree{}C and accuracy $\leq$1\,\textdegree{}C.
+        & Enables the alternating temperature display feature (REQ-102).
+        & \verifbadge{colTesting}{Testing} \\[2pt]
+
+    % ── OPERATIONAL ──────────────────────────────────────────────────────────
+    GS-CLK-REQ-400 & \typebadge{colOperational}{Operational} & \levelbadge{colHigh}{High}
+        & The clock shall operate on 100--240~V~AC, 50/60~Hz (universal mains input).
+        & Allows use anywhere in the laboratory building without power adapters.
+        & \verifbadge{colTesting}{Testing} \\[2pt]
+
+    \rowcolor{rowalt}
+    GS-CLK-REQ-401 & \typebadge{colOperational}{Operational} & \levelbadge{colLow}{Low}
+        & The clock shall consume no more than 12~W under normal operation.
+        & Keeps the device within the power budget allocation for lab instruments.
+        & \verifbadge{colAnalysis}{Analysis} \\[2pt]
+
+    GS-CLK-REQ-402 & \typebadge{colOperational}{Operational} & \levelbadge{colLow}{Low}
+        & The display brightness shall be adjustable (at minimum: high / medium / low) through a front-accessible or firmware-configurable setting.
+        & Reduces eye strain during night-shift operations and extends LED lifetime.
+        & \verifbadge{colDemonstration}{Demo} \\[2pt]
+
+    \rowcolor{rowalt}
+    GS-CLK-REQ-403 & \typebadge{colOperational}{Operational} & \levelbadge{colLow}{Low}
+        & The clock shall provide a status indicator (LED or segment) that shows NTP synchronisation state.
+        & Allows operators to verify time traceability at a glance.
+        & \verifbadge{colInspection}{Inspection} \\[2pt]
+
+    % ── INTERFACE ────────────────────────────────────────────────────────────
+    GS-CLK-REQ-500 & \typebadge{colInterface}{Interface} & \levelbadge{colHigh}{High}
+        & The clock shall include a 10/100BASE-T Ethernet port for NTP time synchronisation and remote configuration.
+        & Standard interface available on all laboratory networking equipment.
+        & \verifbadge{colTesting}{Testing} \\[2pt]
+
+    \rowcolor{rowalt}
+    GS-CLK-REQ-501 & \typebadge{colInterface}{Interface} & \levelbadge{colLow}{Low}
+        & The clock shall include an RS-485 serial port to allow daisy-chaining of additional slave clocks in future.
+        & Enables low-cost network expansion without additional Ethernet infrastructure, consistent with the Pro-Digital reference architecture~[RD2].
+        & \verifbadge{colInspection}{Inspection} \\[2pt]
+
+    GS-CLK-REQ-502 & \typebadge{colInterface}{Interface} & \levelbadge{colLow}{Low}
+        & The clock shall expose a USB or JTAG/SWD debug port accessible without dismantling the enclosure.
+        & Facilitates firmware updates and debugging by the firmware team.
+        & \verifbadge{colInspection}{Inspection} \\[2pt]
+
+    % ── DESIGN ───────────────────────────────────────────────────────────────
+    \rowcolor{rowalt}
+    GS-CLK-REQ-600 & \typebadge{colDesign}{Design} & \levelbadge{colHigh}{High}
+        & All schematics and PCB layouts shall be designed in KiCad (version~8 or later).
+        & Aligns with the laboratory's existing EDA tool standardisation.
+        & \verifbadge{colInspection}{Inspection} \\[2pt]
+
+    GS-CLK-REQ-601 & \typebadge{colDesign}{Design} & \levelbadge{colHigh}{High}
+        & All design files (KiCad project, firmware, documentation) shall be version-controlled in a GitHub repository under the laboratory's organisation.
+        & Ensures traceability, peer review, and long-term maintainability.
+        & \verifbadge{colInspection}{Inspection} \\[2pt]
+
+    \rowcolor{rowalt}
+    GS-CLK-REQ-602 & \typebadge{colDesign}{Design} & \levelbadge{colHigh}{High}
+        & The microcontroller shall include sufficient GPIO to drive all display segments and interfaces without external bus expanders.
+        & Simplifies the design and reduces single-point-of-failure risks.
+        & \verifbadge{colAnalysis}{Analysis} \\[2pt]
+
+    GS-CLK-REQ-603 & \typebadge{colDesign}{Design} & \levelbadge{colLow}{Low}
+        & The PCB shall include a dedicated real-time clock (RTC) IC with a coin-cell or supercapacitor backup circuit.
+        & Satisfies REQ-105 (72-hour time retention during power loss).
+        & \verifbadge{colTesting}{Testing} \\[2pt]
+
+    \rowcolor{rowalt}
+    GS-CLK-REQ-604 & \typebadge{colDesign}{Design} & \levelbadge{colLow}{Low}
+        & The firmware shall be developed in C/C++ using a standard embedded
+        framework (e.g.\ STM32CubeHAL, ESP-IDF, etc).
+        & Leverages existing team expertise and the available library ecosystem.
+        & \verifbadge{colInspection}{Inspection} \\[2pt]
+
+    GS-CLK-REQ-605 & \typebadge{colDesign}{Design} & \levelbadge{colLow}{Low}
+        & The PCB shall include current and voltage sense points on the main power rail for debugging.
+        & Facilitates power-consumption measurement during verification.
+        & \verifbadge{colInspection}{Inspection} \\[2pt]
+
+    % ── MECHANICAL ───────────────────────────────────────────────────────────
+    \rowcolor{rowalt}
+    GS-CLK-REQ-700 & \typebadge{colMechanical}{Mechanical} & \levelbadge{colHigh}{High}
+        & The clock shall be mounted using a Pro-Digital SUP-M-50 compatible ceiling/wall bracket, or a custom bracket with equivalent load capacity and adjustable tilt angle.
+        & Replicates the reference installation from the Pro-Digital SUP datasheet~[RD3] (X~=~20~cm, Y~=~42~cm for RDI-2M size).
+        & \verifbadge{colInspection}{Inspection} \\[2pt]
+
+    GS-CLK-REQ-701 & \typebadge{colMechanical}{Mechanical} & \levelbadge{colHigh}{High}
+        & The mounting bracket shall support vertical and horizontal position adjustment of $\pm$30\textdegree{} without tools.
+        & Allows optimal viewing angle for all operators seated at the consoles.
+        & \verifbadge{colDemonstration}{Demo} \\[2pt]
+
+    \rowcolor{rowalt}
+    GS-CLK-REQ-702 & \typebadge{colMechanical}{Mechanical} & \levelbadge{colLow}{Low}
+        & The enclosure shall use captive screws or quarter-turn fasteners for the front or rear access panel.
+        & Reduces maintenance time and risk of losing hardware during servicing.
+        & \verifbadge{colInspection}{Inspection} \\[2pt]
+
+    GS-CLK-REQ-703 & \typebadge{colMechanical}{Mechanical} & \levelbadge{colLow}{Low}
+        & All PCBs shall be secured inside the enclosure with stand-offs and locking hardware to withstand vibrations typical of laboratory environments.
+        & Prevents PCB movement that could cause intermittent contacts or damage.
+        & \verifbadge{colInspection}{Inspection} \\[2pt]
+
+\end{longtable}
+\end{landscape}

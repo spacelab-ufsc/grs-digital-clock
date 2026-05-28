@@ -1,0 +1,131 @@
+%
+% workplan.tex
+%
+
+\chapter{Work Plan} \label{ch:workplan}
+
+The work plan is divided into four sequential phases. Hardware and firmware teams work in parallel during Phases~3 and~4. Phases~1 and~2 involve both teams together to ensure shared understanding of the system before splitting into parallel tracks.
+
+Table~\ref{tab:workplan} lists all tasks with their phase, assigned team, expected deliverable, and detailed instructions.
+
+\newpage
+\begin{landscape}
+
+\setlength{\LTcapwidth}{\linewidth}
+\begin{longtable}{L{3.5cm} C{2.0cm} L{4.2cm} L{4.9cm} L{8.6cm}}
+
+    \caption{Project work plan.}
+    \label{tab:workplan} \\
+
+    \toprule[1.5pt]
+    \headerc{Phase} & \headerc{Team} & \headerc{Task} & \headerc{Deliverable} & \headerc{Notes / Instructions} \\
+    \midrule
+    \endfirsthead
+
+    \multicolumn{5}{c}{\small\textit{Table~\ref{tab:workplan} -- continued from previous page}} \\[4pt]
+    \toprule[1.5pt]
+    \headerc{Phase} & \headerc{Team} & \headerc{Task} & \headerc{Deliverable} & \headerc{Notes / Instructions} \\
+    \midrule
+    \endhead
+
+    \midrule
+    \multicolumn{5}{r}{\small\textit{Continued on next page\ldots}} \\
+    \endfoot
+
+    \bottomrule[1.5pt]
+    \endlastfoot
+
+    % ── PHASE 1 ──────────────────────────────────────────────────────────────
+    \multirow{3}{3.2cm}{\textbf{Phase 1 -- Project Kick-off}}
+        & \cellcolor{colLow}\textcolor{white}{\textbf{\small Both}}
+        & Repository setup on GitHub
+        & Repository with folder structure, \texttt{README}, \texttt{LICENSE}
+        & Inspect existing lab repositories to replicate folder structure. \\[2pt]
+
+    & \cellcolor{colLow}\textcolor{white}{\textbf{\small Both}}
+        & Requirements review and baseline
+        & Signed-off requirements document
+        & Each team member reads all requirements. Open GitHub Issues for any requirement deemed unclear or infeasible. \\[2pt]
+
+    \rowcolor{rowalt}
+    & \cellcolor{colLow}\textcolor{white}{\textbf{\small Both}}
+        & Development environment setup
+        & KiCad + toolchain installed on all machines
+        & HW team installs KiCad~8 and clones the repo. FW team installs the chosen SDK (e.g.\ ESP-IDF or STM32CubeIDE) and sets up a build pipeline (GitHub Actions). \\[2pt]
+
+    \midrule
+
+    % ── PHASE 2 ──────────────────────────────────────────────────────────────
+    \multirow{3}{3.2cm}{\textbf{Phase 2 -- Architecture}}
+        & \cellcolor{colLow}\textcolor{white}{\textbf{\small Both}}
+        & System block diagram
+        & Block diagram committed to \texttt{/docs/architecture/}
+        & One session with all four members. Define major blocks: Power supply, MCU, RTC, Ethernet PHY, RS-485 transceiver, LED driver, 6-digit display, temperature sensor, backup battery. \\[2pt]
+
+    & \cellcolor{colAnalysis}\textcolor{white}{\textbf{\small HW}}
+        & Component selection and BOM draft
+        & BOM draft in \texttt{/hw/bom/}
+        & Select MCU, Ethernet PHY or built-in MAC, RS-485 transceiver, RTC IC,
+        LED 7-segment modules, temperature sensor. Search in other lab projects
+        for component recommendation. Verify availability and lead time. \\[2pt]
+
+    \rowcolor{rowalt}
+    & \cellcolor{colTesting}\textcolor{white}{\textbf{\small FW}}
+        & Firmware architecture document
+        & FW architecture doc in \texttt{/docs/firmware/}
+        & Define RTOS tasks (or super-loop): NTP sync task, RTC management, display refresh ISR/task, RS-485 slave handler, temperature read, brightness control. \\[2pt]
+
+    \midrule
+
+    % ── PHASE 3 ──────────────────────────────────────────────────────────────
+    \multirow{4}{3.2cm}{\textbf{Phase 3 -- Design}}
+        & \cellcolor{colAnalysis}\textcolor{white}{\textbf{\small HW}}
+        & Schematic design in KiCad
+        & Schematic committed and passing ERC
+        & Divide schematic into sheets: Power, MCU core, Interfaces, Display \& Drivers. Peer-review via pull request before PCB layout starts. \\[2pt]
+
+    & \cellcolor{colAnalysis}\textcolor{white}{\textbf{\small HW}}
+        & PCB layout in KiCad
+        & PCB layout passing DRC; Gerbers exported
+        & Follow IPC-2221 clearance rules. Separate digital and power planes. Place RS-485 and Ethernet connectors at rear panel. Route display connector to front. \\[2pt]
+
+    \rowcolor{rowalt}
+    & \cellcolor{colTesting}\textcolor{white}{\textbf{\small FW}}
+        & Firmware skeleton and peripheral drivers
+        & Compiling FW skeleton with GPIO, UART, I\textsuperscript{2}C, SPI drivers
+        & Implement and unit-test each driver on an evaluation board before the
+        custom PCB arrives. Commit tests to \texttt{/.../tests/}. \\[2pt]
+
+    & \cellcolor{colTesting}\textcolor{white}{\textbf{\small FW}}
+        & NTP client and RTC integration
+        & NTP sync demonstrated on eval board
+        & Implement NTPv4 over UDP. Validate UTC offset and DST handling for the \texttt{America/Sao\_Paulo} timezone (UTC$-$3 / UTC$-$2 during DST). \\[2pt]
+
+    \midrule
+
+    % ── PHASE 4 ──────────────────────────────────────────────────────────────
+    \multirow{4}{3.2cm}{\textbf{Phase 4 -- Integration \& Test}}
+        & \cellcolor{colAnalysis}\textcolor{white}{\textbf{\small HW}}
+        & PCB fabrication and assembly
+        & Assembled and powered-on PCB
+        & Send Gerbers to fab. Assemble SMD components. Perform visual inspection before first power-on. Check all voltage rails with a multimeter before connecting the display. \\[2pt]
+
+    \rowcolor{rowalt}
+    & \cellcolor{colLow}\textcolor{white}{\textbf{\small Both}}
+        & Hardware--firmware integration
+        & Clock displaying time on full hardware
+        & Flash initial firmware. Verify display, NTP sync, temperature alternation, RS-485 loopback, and backup-battery retention. Log all defects as GitHub Issues. \\[2pt]
+
+    & \cellcolor{colLow}\textcolor{white}{\textbf{\small Both}}
+        & Enclosure fabrication and bracket installation
+        & Clock installed on wall / bracket in ground station
+        & Machine or order enclosure panels. Install PCB with stand-offs. Mount on SUP-M-50-compatible bracket. Verify tilt adjustment and cable management. \\[2pt]
+
+    \rowcolor{rowalt}
+    & \cellcolor{colLow}\textcolor{white}{\textbf{\small Both}}
+        & Requirements Verification Matrix (RVM) completion
+        & Completed RVM committed to \texttt{/docs/}
+        & Trace each requirement to its verification evidence (photos, test logs, measurements). Close all open GitHub Issues before final acceptance. \\[2pt]
+
+\end{longtable}
+\end{landscape}
