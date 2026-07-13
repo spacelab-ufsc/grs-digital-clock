@@ -1,0 +1,84 @@
+# Core LaTeX / pdfTeX auxiliary files
+*.aux
+*.lof
+*.log
+*.lot
+*.fls
+*.out
+*.toc
+*.fmt
+*.fot
+*.cb
+*.cb2
+.*.lb
+
+# Intermediate documents
+*.dvi
+*.xdv
+*-converted-to.*
+
+# Bibliography auxiliary files (BibTeX/Biber)
+*.bbl
+*.bcf
+*.blg
+*-blx.aux
+*-blx.bib
+*.brf
+*.run.xml
+
+# Build tool auxiliary files
+*.fdb_latexmk
+*.synctex
+*.synctex.gz
+*.synctex.gz(busy)
+*.pdfsync
+
+# Glossaries and indexes
+*.glo
+*.gls
+*.glg
+*.idx
+*.ind
+*.ilg
+*.ist
+*.acn
+*.acr
+*.alg
+
+# Python / Sphinx / Sinphx build and caching artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+build/
+dist/
+develop-eggs/
+eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+.tox/
+.nox/
+.cache/
+.pytest_cache/
+htmlcov/
+*.cover
+*.pyc
+
+# OS and Editor specific files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+*.swp
+*.swo
+*~
+*.sublime-project
+*.sublime-workspace
+*.vscode/
+*.idea/
