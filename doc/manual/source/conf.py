@@ -8,7 +8,7 @@
 
 project = 'GRS Digital Clock'
 copyright = '2026, GRS Digital Clock Contributors'
-author = 'SpaceLab
+author = 'SpaceLab'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
