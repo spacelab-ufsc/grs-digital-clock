@@ -1,0 +1,15 @@
+Item,Section,Component,Ref,Value,Qty,Notes
+1,Logic Core,ESP32-C3-DevKitM-1 (dev board),,,1,"Brain, Wi-Fi/NTP"
+2,Logic Core,DS3231 RTC module (w/ AT24C32 + CR2032),,,1,Check onboard pull-up (likely already present)
+3,Logic Core,AHT25 module,,,1,Check onboard pull-up (photo suggests it does not have one)
+4,Logic Core,MAX7219 (IC or module),,,1,"Display controller, SPI"
+5,Display Power Stage,74HC540,,,1,Octal inverter (DIG logic)
+6,Display Power Stage,UDN2981 (or TD62783),,,1,12V source driver (segments)
+7,Display Power Stage,ULN2803,,,1,Sink driver (common cathode/digit)
+8,Displays,"WCN1-00D0SR-C11S (4"", Super Red, CC)",,,6,"VF seg ~9.5V, VF DP ~1.9V"
+9,Displays,"WCN1-00B2SR-C11S (2.3"", Red, CC)",,,2,"VF seg ~8.0V, VF DP ~4.0V"
+10,Resistors,Resistor 1/4W,R1,33R,7,"Main A-G current limiter (4"" display bus)"
+11,Resistors,Resistor 1/4W,R2,47R,7,"Series A-G trim, only on the 2x 2.3"" displays"
+12,Resistors,Resistor 1/4W,R3,390R,1,"DP limiter (single bus, all digits)"
+13,Resistors,Resistor (pull-up SDA),R4,4.7k,1,Only if multimeter test confirms absence on AHT25/DS3231
+14,Resistors,Resistor (pull-up SCL),R5,4.7k,1,Same as above
