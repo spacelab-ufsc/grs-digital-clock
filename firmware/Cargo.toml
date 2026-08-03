@@ -1,18 +1,19 @@
 [package]
 edition      = "2024"
-name         = "my-esp-project"
+name         = "grs-digital-clock"
 rust-version = "1.88"
 version      = "0.1.0"
 
 [[bin]]
-name = "my-esp-project"
-path = "./src/bin/main.rs"
+name = "grs-digital-clock"
+path = "src/bin/main.rs"
 
 [dependencies]
 esp-hal = { version = "~1.1.0", features = ["defmt", "esp32c3", "unstable"] }
 
 esp-rtos = { version = "0.3.0", features = [
   "defmt",
+  "embassy",
   "esp-alloc",
   "esp-radio",
   "esp32c3",
@@ -21,15 +22,20 @@ esp-rtos = { version = "0.3.0", features = [
 defmt                  = "1.0.1"
 esp-bootloader-esp-idf = { version = "0.5.0", features = ["defmt", "esp32c3"] }
 
-critical-section = "1.2.0"
-embedded-io = { version = "0.7.1", features = ["defmt"] }
-esp-alloc = { version = "0.10.0", features = ["defmt"] }
-esp-backtrace = { version = "0.19.0", features = [
+embassy-net = { version = "0.9.1", features = [
   "defmt",
-  "esp32c3",
-  "panic-handler",
+  "dhcpv4",
+  "medium-ethernet",
+  "tcp",
+  "udp",
 ] }
-esp-println = { version = "0.17.0", features = ["defmt-espflash", "esp32c3"] }
+embedded-io = { version = "0.7.1", features = ["defmt"] }
+embedded-io-async = { version = "0.7.0", features = ["defmt"] }
+esp-alloc = { version = "0.10.0", features = ["defmt"] }
+rtt-target = { version = "0.6.2", features = ["defmt"] }
+# for more networking protocol support see https://crates.io/crates/edge-net
+embassy-executor = { version = "0.10.0", features = ["defmt"] }
+embassy-time = { version = "0.5.0", features = ["defmt"] }
 esp-radio = { version = "0.18.0", features = [
   "defmt",
   "esp-alloc",
@@ -50,6 +56,9 @@ smoltcp = { version = "0.13.0", default-features = false, features = [
   "socket-tcp",
   "socket-udp",
 ] }
+
+critical-section = "1.2.0"
+static_cell      = "2.1.1"
 
 
 # For fine tuning these settings, please refer to https://doc.rust-lang.org/cargo/reference/profiles.html
