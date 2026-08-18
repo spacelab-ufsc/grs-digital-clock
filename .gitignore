@@ -84,3 +84,7 @@ Desktop.ini
 *.vscode/
 *.idea/
 *.zed
+
+# AI agent specifics
+.claude/
+CLAUDE.mmd

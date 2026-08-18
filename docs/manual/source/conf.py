@@ -31,3 +31,7 @@ bibtex_bibfiles = ["references.bib"]
 
 html_theme = "sphinx_rtd_theme"
 html_static_path = ["_static"]
+html_logo = "_static/spacelab-logo-full-color-rgb-1000px@72ppi.png"
+html_theme_options = {
+    "logo_only": True,
+}
