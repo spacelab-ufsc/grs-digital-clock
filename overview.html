@@ -31,8 +31,9 @@
 
           
           
-          <a href="index.html" class="icon icon-home">
-            grs-digital-clock
+          <a href="index.html">
+            
+              <img src="_static/spacelab-logo-full-color-rgb-1000px@72ppi.png" class="logo" alt="Logo"/>
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
@@ -43,7 +44,13 @@
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Overview</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#ogth">OGTH</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#temp-sensor">Temp Sensor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#rtc">RTC</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#seg-control">Seg Control</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="hardware.html">Hardware</a></li>
 <li class="toctree-l1"><a class="reference internal" href="software.html">Software</a></li>
 <li class="toctree-l1"><a class="reference internal" href="references.html">References</a></li>
@@ -75,19 +82,37 @@
              
   <section id="overview">
 <h1>Overview<a class="headerlink" href="#overview" title="Permalink to this heading"></a></h1>
-<p>The Ground Station Digital Clock (GRS-Digital-Clock) is a low-power, independent and high precision digital clock. Is a core component of SpaceLab’s Ground Station, designed to precisly maintain its time independetly and for a long-period of time without any drift. Below is the general diagram.</p>
-<figure class="align-center" id="id1">
-<a class="reference internal image-reference" href="_images/block-diagram.png"><img alt="_images/block-diagram.png" src="_images/block-diagram.png" style="width: 100%;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 1 </span><span class="caption-text">General system block diagram.</span><a class="headerlink" href="#id1" title="Permalink to this image"></a></p>
-</figcaption>
-</figure>
-<p>At the center of the system is the OGTH module (ESP32-C3-DevKitM-1), which
-periodically synchronizes its clock over the network with an NTP server and
-drives two local peripherals: a DS3231 real-time clock (RTC), which keeps
-time between synchronizations, and an AHT25 temperature sensor, used to
-monitor the ground station’s operating conditions. The current time is
-displayed through a MAX7219 seven-segment display controller.</p>
+<p>The Ground Station Digital Clock (GRS-Digital-Clock) is a low-power, independent and high-precision digital clock. It is a core component of SpaceLab’s Ground Station, designed to precisely maintain time independently and for long periods without drift.</p>
+<section id="ogth">
+<h2>OGTH<a class="headerlink" href="#ogth" title="Permalink to this heading"></a></h2>
+<p>The OGTH (On-Ground Time Handler, an ESP32-C3-DevKitM-1
+<span id="id1">[<a class="reference internal" href="references.html#id2" title="ESP32-C3-DevKitM-1 Getting Started Guide. Espressif Systems, 2026. Accessed: 2026-08-18. URL: https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32c3/esp32-c3-devkitm-1/index.html.">Espressif Systems26</a>]</span>) is the central module of the system. It
+is responsible for:</p>
+<ul class="simple">
+<li><p>synchronizing its clock over the network with an NTP server;</p></li>
+<li><p>gathering ambient temperature readings from the Temp Sensor;</p></li>
+<li><p>updating the RTC with the synchronized time;</p></li>
+<li><p>showcase the time and temperature to Seg Control.</p></li>
+</ul>
+</section>
+<section id="temp-sensor">
+<h2>Temp Sensor<a class="headerlink" href="#temp-sensor" title="Permalink to this heading"></a></h2>
+<p>An AHT25 sensor <span id="id2">[<a class="reference internal" href="references.html#id3" title="AHT25 Humidity and Temperature Module Datasheet. Aosong (Guangzhou) Electronics Co., Ltd., 2021. Accessed: 2026-08-18. URL: https://www.aosong.com/userfiles/files/media/Data%20Sheet%20AHT25%20A2.pdf.">Aosong (Guangzhou) Electronics Co., Ltd.21</a>]</span>, connected to the OGTH over I2C,
+reports the ambient temperature so the OGTH can monitor the ground
+station’s operating conditions.</p>
+</section>
+<section id="rtc">
+<h2>RTC<a class="headerlink" href="#rtc" title="Permalink to this heading"></a></h2>
+<p>A DS3231 real-time clock <span id="id3">[<a class="reference internal" href="references.html#id4" title="DS3231: Extremely Accurate I2C-Integrated RTC/TCXO/Crystal. Analog Devices, Inc., n.d. Accessed: 2026-08-18. URL: https://www.analog.com/media/en/technical-documentation/data-sheets/ds3231.pdf.">Analog Devices, Inc.d.a</a>]</span>, connected to the OGTH over
+I2C, keeps time locally. The OGTH updates it after each NTP synchronization,
+so it keeps accurate time even when the network is unavailable.</p>
+</section>
+<section id="seg-control">
+<h2>Seg Control<a class="headerlink" href="#seg-control" title="Permalink to this heading"></a></h2>
+<p>A MAX7219 seven-segment display controller <span id="id4">[<a class="reference internal" href="references.html#id5" title="MAX7219/MAX7221: Serially Interfaced, 8-Digit LED Display Drivers. Analog Devices, Inc., n.d. Accessed: 2026-08-18. URL: https://www.analog.com/media/en/technical-documentation/data-sheets/MAX7219-MAX7221.pdf.">Analog Devices, Inc.d.b</a>]</span>,
+connected to the OGTH over SPI, drives the physical display that shows the
+current time.</p>
+</section>
 </section>
 
 

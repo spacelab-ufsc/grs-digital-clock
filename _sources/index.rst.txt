@@ -10,8 +10,9 @@ This documentation concerns the low power and real-time ground station digital c
 - A seven-segment display for direct visualization of the current time.
 - A low-power ESP32-C3 microcontroller module (OGTH) at the core of the system.
 
-See :doc:`hardware` for the block diagram and pin-level connections, and
-:doc:`software` for details on how these peripherals are driven.
+See :doc:`overview` for what each module does, :doc:`hardware` for the block
+diagram and pin-level connections, and :doc:`software` for details on how
+these peripherals are driven.
 
 .. toctree::
     :maxdepth: 3

@@ -30,8 +30,9 @@
 
           
           
-          <a href="#" class="icon icon-home">
-            grs-digital-clock
+          <a href="#">
+            
+              <img src="_static/spacelab-logo-full-color-rgb-1000px@72ppi.png" class="logo" alt="Logo"/>
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
@@ -82,11 +83,18 @@
 <li><p>A seven-segment display for direct visualization of the current time.</p></li>
 <li><p>A low-power ESP32-C3 microcontroller module (OGTH) at the core of the system.</p></li>
 </ul>
-<p>See <a class="reference internal" href="hardware.html"><span class="doc">Hardware</span></a> for the block diagram and pin-level connections, and
-<a class="reference internal" href="software.html"><span class="doc">Software</span></a> for details on how these peripherals are driven.</p>
+<p>See <a class="reference internal" href="overview.html"><span class="doc">Overview</span></a> for what each module does, <a class="reference internal" href="hardware.html"><span class="doc">Hardware</span></a> for the block
+diagram and pin-level connections, and <a class="reference internal" href="software.html"><span class="doc">Software</span></a> for details on how
+these peripherals are driven.</p>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="overview.html#ogth">OGTH</a></li>
+<li class="toctree-l2"><a class="reference internal" href="overview.html#temp-sensor">Temp Sensor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="overview.html#rtc">RTC</a></li>
+<li class="toctree-l2"><a class="reference internal" href="overview.html#seg-control">Seg Control</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="hardware.html">Hardware</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="hardware.html#i2c-bus">I2C bus</a></li>
 <li class="toctree-l2"><a class="reference internal" href="hardware.html#spi-bus">SPI bus</a></li>
