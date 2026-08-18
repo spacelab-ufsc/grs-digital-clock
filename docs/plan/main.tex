@@ -1,0 +1,66 @@
+%
+% main.tex
+%
+% Copyright (C) 2026 by SpaceLab.
+%
+% GROUND STATION DIGITAL CLOCK — Requirements & Work Plan
+%
+% This work is licensed under the Creative Commons Attribution-ShareAlike 4.0
+% International License.
+%
+
+\documentclass[a4paper,12pt]{book}
+
+\usepackage{spacelab_book}
+
+\title{Ground Station Digital Clock\\Requirements \& Work Plan}
+\author{SpaceLab UFSC}
+\date{\today}
+
+\hypersetup{
+    pdfauthor   = {SpaceLab UFSC},
+    pdfsubject  = {Ground Station Digital Clock},
+    pdftitle    = {Ground Station Digital Clock -- Requirements \& Work Plan},
+    pdfkeywords = {Ground Station, Digital Clock, CubeSat, NTP, KiCad, Requirements}
+}
+
+\begin{document}
+
+    \pagenumbering{roman}
+    \setcounter{page}{1}
+
+    \input{header/titlepage}
+%    \cleardoublepage
+    \input{header/authorpage}
+%    \cleardoublepage
+
+    \listoftables
+    \addcontentsline{toc}{chapter}{List of Tables}
+%    \cleardoublepage
+
+%    \listoffigures
+%    \addcontentsline{toc}{chapter}{List of Figures}
+%    \cleardoublepage
+
+    %    \printnomenclature
+%    \addcontentsline{toc}{chapter}{Nomenclature}
+%    \cleardoublepage
+
+    \input{header/abbreviations}
+%    \cleardoublepage
+
+    \tableofcontents
+%    \cleardoublepage
+
+    \pagenumbering{arabic}
+    \setcounter{page}{1}
+
+    \input{chapters/introduction}
+    \input{chapters/team}
+    \input{chapters/repository}
+    \input{chapters/requirements}
+    \input{chapters/workplan}
+    \input{chapters/constraints}
+%    \input{chapters/references}
+
+\end{document}

@@ -1,0 +1,43 @@
+%
+% repository.tex
+%
+
+\chapter{GitHub Repository Setup} \label{ch:repository}
+
+Before any design work begins, the team shall create a GitHub repository under the SpaceLab UFSC organisation. The following actions are \textbf{required} at kick-off:
+
+\begin{itemize}
+    \item \textbf{Replicate the lab's folder structure.} Browse existing SpaceLab repositories to identify the standard folder hierarchy used across projects. 
+    \item \textbf{Continue the base branch structure:} \texttt{main} (stable
+        releases), \texttt{dev\_firmware}, \texttt{dev\_hardware},
+        \texttt{dev\_mechanical}, \texttt{dev\_doc}.
+    \item \textbf{Add a \texttt{.gitignore}} appropriate for KiCad projects (exclude fabrication outputs and local caches), and a basic \texttt{README.md}.
+\end{itemize}
+
+\section{Recommended Folder Structure}
+
+Table~\ref{tab:repo} lists the recommended top-level directories and files for the repository.
+
+\begin{table}[ht]
+    \caption{Recommended repository folder structure.}
+    \label{tab:repo}
+    \begin{center}
+        \begin{tabular}{L{4.5cm}L{10cm}}
+            \toprule[1.5pt]
+            \textbf{Path} & \textbf{Description} \\
+            \midrule
+            \texttt{/.github/workflows/}    & GitHub Actions CI: build check, KiCad ERC/DRC scripts. \\
+            \texttt{/doc/}                 & Architecture block diagram, firmware architecture document, datasheet references. \\
+            \texttt{/hardware/}                   & KiCad project root. Contains \texttt{.kicad\_pro}, schematic sheets, PCB file. \\
+            \texttt{/hardware/bom/}               & Bill of Materials (CSV and XLSX). Updated after each component selection iteration. \\
+            \texttt{/hardware/outputs/}               & Fabrication outputs: Gerbers, drill files, assembly drawings. \\
+            \texttt{/firmware/}                   & Firmware source tree. Follows the structure of the chosen SDK (e.g.\ ESP-IDF \texttt{components/}). \\
+            \texttt{/firmware/tests/}             & Unit tests for peripheral drivers, NTP parser, and DST logic. \\
+            \texttt{/LICENSE}               & Creative Commons
+            Attribution Share Alike 4.0 International for documentation and GNU
+            General Public License v2.0 for coding. \\
+            \texttt{/README.md}             & Project overview, hardware version, build instructions, programming guide, team contacts. \\
+            \bottomrule[1.5pt]
+        \end{tabular}
+    \end{center}
+\end{table}

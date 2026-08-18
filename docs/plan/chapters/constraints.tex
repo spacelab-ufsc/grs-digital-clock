@@ -1,0 +1,21 @@
+%
+% constraints.tex
+%
+
+\chapter{Design Constraints and Notes} \label{ch:constraints}
+
+The following constraints complement the formal requirements of Chapter~\ref{ch:requirements} and provide additional implementation guidance for both teams.
+
+\begin{enumerate}
+
+    \item \textbf{EDA tool.} All PCB design work shall be performed in KiCad version~8 or later. No proprietary EDA formats shall be committed to the repository.
+
+    \item \textbf{Timezone.} The firmware NTP client shall default to \texttt{America/Sao\_Paulo} (UTC$-$3 / UTC$-$2 during DST). The DST transition dates shall be sourced from the official Brazilian government calendar.
+
+    \item \textbf{NTP protocol version.} The firmware shall implement NTPv4 as defined in RFC~5905, with at least two configurable server addresses (primary and fallback). Suggested defaults: \texttt{a.ntp.br} and \texttt{b.ntp.br} (NTP.br pool, Registro.br).
+
+    \item \textbf{Display visibility.} The chosen LED digit modules shall maintain adequate contrast in the ambient lighting conditions of the control room. A minimum contrast ratio of 3:1 between the illuminated segment and the enclosure background is recommended.
+
+    \item \textbf{RS-485 network.} When operating in slave mode on an RS-485 network, the firmware shall continue free-running timekeeping from the local RTC if the master signal is lost, consistent with the behaviour described in the Pro-Digital reference datasheet~[RD2].
+
+\end{enumerate}

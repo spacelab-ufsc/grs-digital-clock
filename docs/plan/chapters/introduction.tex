@@ -1,0 +1,60 @@
+%
+% introduction.tex
+%
+
+\chapter{Introduction} \label{ch:introduction}
+
+This document specifies the requirements for a custom-built digital clock to be installed in the SpaceLab\nomenclature{\textbf{SpaceLab}}{\textit{Space Technology Research Laboratory -- UFSC.}} UFSC ground station and control room. The clock is inspired by the Pro-Digital RDI-2M\nomenclature{\textbf{RDI-2M}}{\textit{Pro-Digital 6-digit industrial wall clock, medium model.}} industrial wall clock -- a 6-digit, Ethernet-synchronised display with ambient temperature alternation -- and must be designed, fabricated, and verified entirely in-house by the laboratory team.
+
+The document also defines the work plan describing how the four-person team is organised, the tasks to be completed in each phase, and the expected deliverables per task.
+
+\section{Scope}
+
+The scope of this document covers:
+
+\begin{itemize}
+    \item A full set of requirements for all engineering disciplines: functional, physical, environmental, operational, interface, design, and mechanical.
+    \item The GitHub\nomenclature{\textbf{GitHub}}{\textit{Web-based version control hosting service.}} repository structure and kick-off actions required before design work begins.
+    \item A phased work plan for two hardware engineers and two firmware engineers working in parallel.
+    \item Design constraints and notes that complement the formal requirements.
+\end{itemize}
+
+\section{Document Identification}
+
+\begin{table}[H]
+    \caption{Document identification.}
+    \label{tab:doc-id}
+    \begin{center}
+        \begin{tabular}{L{5cm}L{8cm}}
+            \toprule[1.5pt]
+            \textbf{Field}          & \textbf{Value} \\
+            \midrule
+            Document Number         & SLB-GS-CLK-REQ-v1.0 \\
+            Title                   & Ground Station Digital Clock -- Requirements \& Work Plan \\
+            Organisation            & SpaceLab, UFSC \\
+            Location                & Florian\'{o}polis, Santa Catarina, Brazil \\
+            Version                 & 1.0 \\
+            Date                    & 2026 \\
+            Status                  & Draft \\
+            \bottomrule[1.5pt]
+        \end{tabular}
+    \end{center}
+\end{table}
+
+\section{Reference Documents}
+
+\begin{table}[H]
+    \caption{Reference documents.}
+    \label{tab:refs}
+    \begin{center}
+        \begin{tabular}{C{1.5cm}L{4cm}L{7.5cm}}
+            \toprule[1.5pt]
+            \textbf{Ref.} & \textbf{Identifier} & \textbf{Title / Description} \\
+            \midrule
+            {[}RD1{]} & Pro-Digital Orc. 52359 & Quotation No.\ 52359 dated 13 Nov 2025. Commercial reference pricing for models RDI-2P, RDI-2M, and RDI-2G. \\
+            {[}RD2{]} & RDI Datasheet & Pro-Digital Industrial Wall Clock datasheet -- operating modes, networking options, dimensions, and model comparison table. \\
+            {[}RD3{]} & SUP Datasheet & Pro-Digital Suporte para RDI/Cron\^{o}metros -- bracket models SUP-P-30, SUP-M-50, and SUP-G-60 with compatible clock models and dimensions X/Y. \\
+            \bottomrule[1.5pt]
+        \end{tabular}
+    \end{center}
+\end{table}
