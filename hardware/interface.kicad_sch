@@ -1,0 +1,50 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "305750be-a747-43ae-9d84-6d7317218236")
+	(paper "A4")
+	(lib_symbols)
+	(sheet
+		(at 30.48 35.56)
+		(size 50.8 76.2)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "28ad286a-f156-4570-a614-122f36db2ce2")
+		(property "Sheetname" "topology"
+			(at 30.48 34.8484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "topology.kicad_sch"
+			(at 30.48 112.3446 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "RelogioGRS"
+				(path "/c5089fae-3fc0-463b-a1cd-29d25b5e00c5/88c473a8-a79d-4818-8d16-2e360f67bb0b"
+					(page "3")
+				)
+			)
+		)
+	)
+)

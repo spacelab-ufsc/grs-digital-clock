@@ -1,0 +1,5202 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "a22544e1-8c3b-4110-90c7-09f3b7d42bcc")
+	(paper "A4")
+	(lib_symbols
+		(symbol "Device:R"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "RelogioGRS_Library:WCN1-00B2SR-C11S"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "DS"
+				(at 0 20.32 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "WCN1-00B2SR-C11S"
+				(at 0 17.78 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 -8.89 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 -11.43 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "7-Segment LED Display, 2.3 pol., Red, Common Cathode, 10 pin"
+				(at 0 -13.97 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "WCN1-00B2SR-C11S_0_1"
+				(rectangle
+					(start -8.89 17.78)
+					(end 8.89 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "WCN1-00B2SR-C11S_1_1"
+				(pin passive line
+					(at -13.97 15.24 0)
+					(length 5.08)
+					(name "COM"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -13.97 -2.54 0)
+					(length 5.08)
+					(name "COM"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 13.97 15.24 180)
+					(length 5.08)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 13.97 12.7 180)
+					(length 5.08)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 13.97 10.16 180)
+					(length 5.08)
+					(name "C"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 13.97 7.62 180)
+					(length 5.08)
+					(name "D"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 13.97 5.08 180)
+					(length 5.08)
+					(name "E"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 13.97 2.54 180)
+					(length 5.08)
+					(name "F"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 13.97 0 180)
+					(length 5.08)
+					(name "G"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 13.97 -2.54 180)
+					(length 5.08)
+					(name "DP"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "RelogioGRS_Library:WCN1-00D0SR-C11S"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "DS"
+				(at 0 20.32 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "WCN1-00D0SR-C11S"
+				(at 0 17.78 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 -8.89 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 -11.43 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "7-Segment LED Display, 4.0 pol., Super Red, Common Cathode, 10 pin"
+				(at 0 -13.97 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "WCN1-00D0SR-C11S_0_1"
+				(rectangle
+					(start -8.89 17.78)
+					(end 8.89 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "WCN1-00D0SR-C11S_1_1"
+				(pin passive line
+					(at -13.97 15.24 0)
+					(length 5.08)
+					(name "COM"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -13.97 -2.54 0)
+					(length 5.08)
+					(name "COM"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 13.97 15.24 180)
+					(length 5.08)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 13.97 12.7 180)
+					(length 5.08)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 13.97 10.16 180)
+					(length 5.08)
+					(name "C"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 13.97 7.62 180)
+					(length 5.08)
+					(name "D"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 13.97 5.08 180)
+					(length 5.08)
+					(name "E"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 13.97 2.54 180)
+					(length 5.08)
+					(name "F"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 13.97 0 180)
+					(length 5.08)
+					(name "G"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 13.97 -2.54 180)
+					(length 5.08)
+					(name "DP"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(text "EXTERNAL CONNECTIONS"
+		(exclude_from_sim no)
+		(at 56.134 98.806 0)
+		(effects
+			(font
+				(size 2.3 2.3)
+			)
+		)
+		(uuid "5b037c0f-5562-4f14-a5f6-ad2ebe8c2bb6")
+	)
+	(text "7SEG_A-G"
+		(exclude_from_sim no)
+		(at 55.88 112.776 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "92a8d529-40b9-42ee-b203-cec1433de307")
+	)
+	(text "GND_CC"
+		(exclude_from_sim no)
+		(at 55.88 139.7 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "c9265fc9-5fbe-4b60-b542-690a6ba5c369")
+	)
+	(junction
+		(at 195.58 78.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "251eb069-6796-4ca6-a3d9-1225c07630d6")
+	)
+	(junction
+		(at 242.57 78.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "37bc6714-2fad-46af-a81d-fa70bc13a66c")
+	)
+	(junction
+		(at 40.64 34.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3bd6fd98-9544-4463-9745-a6c164829360")
+	)
+	(junction
+		(at 40.64 31.75)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7ddd0696-ea6c-43fd-a306-f86cd9c77c51")
+	)
+	(junction
+		(at 77.47 29.21)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a4dd75f0-cc8d-4540-b2ce-68a928a882e9")
+	)
+	(junction
+		(at 160.02 29.21)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ac2b645f-331f-47df-bfb3-91d4f5065900")
+	)
+	(junction
+		(at 242.57 29.21)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b53cf378-0d5f-4564-991e-ddd6a3d036fc")
+	)
+	(junction
+		(at 68.58 46.99)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bd14e1be-4ff0-4c82-aab2-d0fa70b99fa5")
+	)
+	(junction
+		(at 234.95 46.99)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bdc24593-5413-45a5-a48e-2ec27d21ae4f")
+	)
+	(junction
+		(at 152.4 46.99)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f4ccdbfe-4165-453b-aacc-efb1106a28d6")
+	)
+	(wire
+		(pts
+			(xy 199.39 36.83) (xy 207.01 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "00ed457b-8d92-4596-af74-37bd87e7b4b4")
+	)
+	(wire
+		(pts
+			(xy 105.41 44.45) (xy 106.68 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "02cf7fca-0f5e-4400-bb8e-194fd0b2ab9a")
+	)
+	(wire
+		(pts
+			(xy 125.73 74.93) (xy 125.73 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "031c1d0c-479c-44e2-b8be-5555bb63c3e7")
+	)
+	(wire
+		(pts
+			(xy 148.59 64.77) (xy 148.59 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "048e6f66-91d6-452f-9e9e-4dc03fbefcf3")
+	)
+	(wire
+		(pts
+			(xy 69.85 74.93) (xy 69.85 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "04f07238-4e02-4993-ae95-ca42ecae521f")
+	)
+	(wire
+		(pts
+			(xy 40.64 115.57) (xy 66.04 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0776e1a2-2dd6-4713-921f-fa80ffe65501")
+	)
+	(wire
+		(pts
+			(xy 187.96 46.99) (xy 189.23 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0875558e-8609-47f9-98d8-ce77f590e400")
+	)
+	(wire
+		(pts
+			(xy 223.52 68.58) (xy 224.79 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0bf719e1-7677-46e3-8aee-cb78975456de")
+	)
+	(wire
+		(pts
+			(xy 270.51 31.75) (xy 271.78 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0d140bdd-d5e4-43b8-8bc1-812fdf601a6a")
+	)
+	(wire
+		(pts
+			(xy 170.18 64.77) (xy 170.18 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0eb521df-842f-493d-a906-4a5864a13952")
+	)
+	(wire
+		(pts
+			(xy 270.51 36.83) (xy 271.78 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "14b23425-dbba-4128-9097-4e802cc1a90d")
+	)
+	(wire
+		(pts
+			(xy 270.51 29.21) (xy 271.78 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "14cb949a-8c1a-405e-8441-ff2a9779da60")
+	)
+	(wire
+		(pts
+			(xy 40.64 143.51) (xy 66.04 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1583a921-b749-4a8e-8535-e30ac070056b")
+	)
+	(wire
+		(pts
+			(xy 105.41 39.37) (xy 106.68 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1e41ff6a-8e2b-4160-a6a3-d6fe1d2ab59a")
+	)
+	(wire
+		(pts
+			(xy 116.84 31.75) (xy 124.46 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1e6611e6-cab8-40d4-ad57-ff3786850240")
+	)
+	(bus
+		(pts
+			(xy 25.4 92.71) (xy 25.4 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "24453c5e-2520-4a8c-b2dc-879345444c6d")
+	)
+	(wire
+		(pts
+			(xy 187.96 31.75) (xy 189.23 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "24e05080-cfd9-4814-86e7-090c513b7660")
+	)
+	(bus
+		(pts
+			(xy 25.4 92.71) (xy 87.63 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2692bd34-9454-40bf-a225-0ae520b24277")
+	)
+	(wire
+		(pts
+			(xy 270.51 41.91) (xy 271.78 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2af117d4-33e4-4f4e-9a68-47cd380ece11")
+	)
+	(wire
+		(pts
+			(xy 52.07 74.93) (xy 52.07 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2b971212-5290-4ae7-bd1f-0ba8a01236e0")
+	)
+	(wire
+		(pts
+			(xy 77.47 27.94) (xy 77.47 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ffba71b-eddf-452f-8f56-85e4bb26d756")
+	)
+	(wire
+		(pts
+			(xy 105.41 29.21) (xy 106.68 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "30588f68-ceda-421a-bbc2-c811fc982c20")
+	)
+	(wire
+		(pts
+			(xy 40.64 146.05) (xy 66.04 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "31f8a498-cd1c-4ef3-bfbe-9f291ce33b68")
+	)
+	(wire
+		(pts
+			(xy 43.18 64.77) (xy 43.18 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "32160bdd-25ff-4a52-8cb2-f246e4b5e210")
+	)
+	(wire
+		(pts
+			(xy 68.58 29.21) (xy 68.58 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "388740a2-3cd9-4098-a9bd-e30c119ff71d")
+	)
+	(wire
+		(pts
+			(xy 270.51 63.5) (xy 271.78 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "41b8712e-8063-449a-b6d7-46e8384288d9")
+	)
+	(wire
+		(pts
+			(xy 148.59 74.93) (xy 148.59 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "42896315-64e6-4dbf-85be-58bf77a7702b")
+	)
+	(wire
+		(pts
+			(xy 40.64 158.75) (xy 66.04 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "44c3ebb4-df70-4f96-a539-236995dbb1be")
+	)
+	(wire
+		(pts
+			(xy 270.51 34.29) (xy 271.78 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "45bcf912-4bf3-4902-b16a-4269c9f022ff")
+	)
+	(wire
+		(pts
+			(xy 223.52 76.2) (xy 224.79 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "48801048-bdd9-44b8-8d62-6d701213d4cb")
+	)
+	(wire
+		(pts
+			(xy 33.02 41.91) (xy 40.64 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4a55eb7e-223e-4f97-8c59-bb03539fb933")
+	)
+	(wire
+		(pts
+			(xy 116.84 41.91) (xy 124.46 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4aebd125-7c4c-48cc-9843-643976e78202")
+	)
+	(wire
+		(pts
+			(xy 114.3 64.77) (xy 114.3 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4ddbfe84-85cf-4520-bd99-383ae8adcba1")
+	)
+	(wire
+		(pts
+			(xy 199.39 44.45) (xy 207.01 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4e5617ae-9db9-42a5-9311-dd12756f2145")
+	)
+	(wire
+		(pts
+			(xy 187.96 41.91) (xy 189.23 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "51f59bf1-70d4-4caf-9cdb-943b28426713")
+	)
+	(wire
+		(pts
+			(xy 116.84 36.83) (xy 124.46 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "52e62bef-ef26-499b-ac8a-da9734d42635")
+	)
+	(wire
+		(pts
+			(xy 187.96 36.83) (xy 189.23 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "53621eca-1fd4-4261-941c-964fb5d56b28")
+	)
+	(wire
+		(pts
+			(xy 270.51 46.99) (xy 271.78 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "53bec01f-0faa-4b56-aee0-88a4194cc8be")
+	)
+	(wire
+		(pts
+			(xy 40.64 128.27) (xy 66.04 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54206e22-ed98-4203-ba3c-99519c4e7f8c")
+	)
+	(wire
+		(pts
+			(xy 69.85 64.77) (xy 69.85 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "551b7aea-2fe8-48c7-8cfc-822d2b6ffaca")
+	)
+	(bus
+		(pts
+			(xy 87.63 92.71) (xy 87.63 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "56049674-824d-4741-abb6-abe6ef8d51bd")
+	)
+	(wire
+		(pts
+			(xy 116.84 46.99) (xy 124.46 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "575f99c1-d993-462f-92c2-c800e95d2783")
+	)
+	(wire
+		(pts
+			(xy 116.84 39.37) (xy 124.46 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5e52f09c-3fc7-4f11-946f-55e4d12244c0")
+	)
+	(wire
+		(pts
+			(xy 96.52 64.77) (xy 96.52 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "602ed4b9-f45c-4a41-bfcd-6d68ae2718ed")
+	)
+	(wire
+		(pts
+			(xy 105.41 31.75) (xy 106.68 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6056b3e3-f5b2-4f4b-a08e-736b5169619f")
+	)
+	(wire
+		(pts
+			(xy 116.84 44.45) (xy 124.46 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "61e1cbd7-1d8a-4d98-a6f8-19228aa58056")
+	)
+	(wire
+		(pts
+			(xy 40.64 156.21) (xy 66.04 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "628d0332-40c1-4811-b058-8fa29e27fdb7")
+	)
+	(wire
+		(pts
+			(xy 199.39 31.75) (xy 207.01 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "641e9d4f-b7fe-42f9-b5ad-b1b69fcad8d0")
+	)
+	(wire
+		(pts
+			(xy 270.51 60.96) (xy 271.78 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "64f969fe-89f3-4c01-9796-c2232282f047")
+	)
+	(wire
+		(pts
+			(xy 187.96 34.29) (xy 189.23 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "67eb25f7-9653-4b2e-8785-e394996a16ab")
+	)
+	(wire
+		(pts
+			(xy 24.13 64.77) (xy 24.13 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "69835d15-21b5-49e1-9272-e9d96478b5f9")
+	)
+	(wire
+		(pts
+			(xy 270.51 44.45) (xy 271.78 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6e6e9a72-07ca-44ed-8d16-e13496958aab")
+	)
+	(wire
+		(pts
+			(xy 137.16 64.77) (xy 137.16 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "71805165-2fd9-49eb-84bd-6ec2db7ad4cb")
+	)
+	(wire
+		(pts
+			(xy 242.57 60.96) (xy 242.57 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "72a3ad02-d971-4bac-8a8a-406556128014")
+	)
+	(wire
+		(pts
+			(xy 234.95 46.99) (xy 234.95 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "72ffccd9-a0d8-4e74-a594-f0ec2d883f3d")
+	)
+	(wire
+		(pts
+			(xy 270.51 71.12) (xy 271.78 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "73219f83-2cd4-4c79-bb04-1230425e2f1b")
+	)
+	(wire
+		(pts
+			(xy 270.51 73.66) (xy 271.78 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7338ed08-5509-4a61-a399-746bb01800c3")
+	)
+	(wire
+		(pts
+			(xy 40.64 133.35) (xy 66.04 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7559627b-cab9-4c89-9f7e-c60f87f8758b")
+	)
+	(wire
+		(pts
+			(xy 270.51 68.58) (xy 271.78 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "775c4deb-f94f-4016-b344-2dba45f236a5")
+	)
+	(wire
+		(pts
+			(xy 242.57 27.94) (xy 242.57 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7b087831-48fe-4c34-b96f-e5df0afe8f36")
+	)
+	(wire
+		(pts
+			(xy 33.02 39.37) (xy 40.64 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7b6e924a-af59-498f-aa17-40718ca073da")
+	)
+	(wire
+		(pts
+			(xy 199.39 29.21) (xy 207.01 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7e0f2272-f3b0-4236-b4ca-562ccc3099ef")
+	)
+	(wire
+		(pts
+			(xy 33.02 29.21) (xy 40.64 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7e1b4c2f-18cf-4884-b9bb-79674e872e58")
+	)
+	(wire
+		(pts
+			(xy 199.39 46.99) (xy 207.01 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "85bc7994-6c08-4156-96a9-c99f210bd0bc")
+	)
+	(wire
+		(pts
+			(xy 116.84 34.29) (xy 124.46 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "87374fff-ce39-40d6-ac41-ecb4d5dc72cc")
+	)
+	(wire
+		(pts
+			(xy 223.52 60.96) (xy 224.79 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "890ef439-827f-4151-9607-b5c57daed510")
+	)
+	(wire
+		(pts
+			(xy 40.64 118.11) (xy 66.04 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8a18329d-5063-4d12-b74c-bb07e533e702")
+	)
+	(wire
+		(pts
+			(xy 199.39 34.29) (xy 207.01 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8a25d488-5d3e-4b86-99d8-af676fcf022c")
+	)
+	(wire
+		(pts
+			(xy 234.95 27.94) (xy 242.57 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8bb8180d-f355-4a7d-a76e-896c959470cc")
+	)
+	(wire
+		(pts
+			(xy 223.52 66.04) (xy 224.79 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c9e76fc-4ecd-4328-a4cf-192658484001")
+	)
+	(wire
+		(pts
+			(xy 223.52 63.5) (xy 224.79 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8d681020-1a87-4880-b39d-b8a12ef59387")
+	)
+	(wire
+		(pts
+			(xy 40.64 125.73) (xy 66.04 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8e963243-6058-4174-b0c4-621f7f58d974")
+	)
+	(wire
+		(pts
+			(xy 40.64 120.65) (xy 66.04 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "902d6a44-5261-4369-9334-51d2be2defc4")
+	)
+	(wire
+		(pts
+			(xy 137.16 74.93) (xy 137.16 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9236632c-9fe7-4ea3-9009-ef2ed588d2f1")
+	)
+	(bus
+		(pts
+			(xy 87.63 177.8) (xy 25.4 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9266b7e6-27ce-41ef-afbf-2c3910ce4c2a")
+	)
+	(wire
+		(pts
+			(xy 152.4 27.94) (xy 160.02 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "94a9f330-e668-46f0-8665-c2a683ce8ff1")
+	)
+	(wire
+		(pts
+			(xy 24.13 74.93) (xy 24.13 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "97ee2b9e-8b60-412d-9bba-defcb5d859dc")
+	)
+	(wire
+		(pts
+			(xy 152.4 29.21) (xy 152.4 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9815611b-0861-44cd-9b81-18927730c57b")
+	)
+	(wire
+		(pts
+			(xy 195.58 78.74) (xy 195.58 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "98d05be2-565c-45f2-952d-84c38387ab5a")
+	)
+	(wire
+		(pts
+			(xy 105.41 34.29) (xy 106.68 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "99b11ba5-dd61-4ae4-9147-2194120fb29f")
+	)
+	(wire
+		(pts
+			(xy 33.02 36.83) (xy 40.64 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "99cbf176-0a45-43f6-b5ea-ac5cfe5e4ce4")
+	)
+	(wire
+		(pts
+			(xy 116.84 29.21) (xy 124.46 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9abff30b-1f7c-4be3-bd83-2f5a45765f61")
+	)
+	(wire
+		(pts
+			(xy 242.57 78.74) (xy 242.57 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9e4ff00e-b6ef-4f18-88bc-665b3f26c783")
+	)
+	(wire
+		(pts
+			(xy 40.64 148.59) (xy 66.04 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9fba6830-9824-416f-9bca-b8a99db27ed8")
+	)
+	(wire
+		(pts
+			(xy 160.02 74.93) (xy 160.02 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a0194828-598d-4b8b-b155-eee7a26f252a")
+	)
+	(wire
+		(pts
+			(xy 187.96 29.21) (xy 189.23 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a3b2c9c8-7a4b-4d1e-8bc6-6dbf0f6c0658")
+	)
+	(wire
+		(pts
+			(xy 41.91 31.75) (xy 40.64 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a479058e-19dc-4e34-9f2b-50820d8751f6")
+	)
+	(wire
+		(pts
+			(xy 33.02 44.45) (xy 40.64 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a573f84a-9afc-4d30-ba4f-a0d24c10039b")
+	)
+	(wire
+		(pts
+			(xy 40.64 151.13) (xy 66.04 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a734cb97-318d-44fb-8ff2-c9751a743dae")
+	)
+	(wire
+		(pts
+			(xy 223.52 78.74) (xy 224.79 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a96193cf-b336-4115-b403-ad61105e6181")
+	)
+	(wire
+		(pts
+			(xy 152.4 46.99) (xy 152.4 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a9e339d4-06ad-4e9a-ad41-34301da5d8cb")
+	)
+	(wire
+		(pts
+			(xy 170.18 74.93) (xy 170.18 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ad9cccca-5904-4c68-871f-24467e40cc22")
+	)
+	(wire
+		(pts
+			(xy 40.64 130.81) (xy 66.04 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aef0dd00-fb79-472d-ac32-59630c3a19f1")
+	)
+	(wire
+		(pts
+			(xy 270.51 39.37) (xy 271.78 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "afe88c84-ea59-40c5-ba28-ec5b083160e0")
+	)
+	(wire
+		(pts
+			(xy 87.63 74.93) (xy 87.63 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b75acc7b-06cb-45c1-b66a-15d543b1ff46")
+	)
+	(wire
+		(pts
+			(xy 114.3 74.93) (xy 114.3 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b7c7094b-6f16-4a8e-a3d2-4d1211fabf68")
+	)
+	(wire
+		(pts
+			(xy 96.52 74.93) (xy 96.52 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b952ac16-dd85-472c-bba9-14eee6bfb5db")
+	)
+	(wire
+		(pts
+			(xy 223.52 73.66) (xy 224.79 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b9666ed1-8106-4623-9738-62c350874802")
+	)
+	(wire
+		(pts
+			(xy 78.74 64.77) (xy 78.74 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b986a4af-a26d-4ff0-a0e9-dd928ff08e96")
+	)
+	(wire
+		(pts
+			(xy 40.64 123.19) (xy 66.04 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ba02a037-2c23-4beb-bb45-e05621019e29")
+	)
+	(wire
+		(pts
+			(xy 60.96 64.77) (xy 60.96 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bf0b99e4-117e-480b-ba09-7a98874dd280")
+	)
+	(wire
+		(pts
+			(xy 242.57 29.21) (xy 242.57 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bfea1d42-9305-444a-88f0-ef7f04481504")
+	)
+	(wire
+		(pts
+			(xy 199.39 41.91) (xy 207.01 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c000a189-bb28-4f3b-86c5-d7a2b3e21a73")
+	)
+	(wire
+		(pts
+			(xy 187.96 39.37) (xy 189.23 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c12fbe19-22b4-47b6-a622-63d51760e64c")
+	)
+	(wire
+		(pts
+			(xy 160.02 64.77) (xy 160.02 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c5b610ec-3e9b-4aaa-bd26-2d719b2bae49")
+	)
+	(wire
+		(pts
+			(xy 223.52 71.12) (xy 224.79 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c63b0e36-cd82-4a28-9d62-f1fd5bd6d5fe")
+	)
+	(wire
+		(pts
+			(xy 77.47 29.21) (xy 77.47 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c64204f7-13f5-497f-87a3-5a6216b08353")
+	)
+	(wire
+		(pts
+			(xy 60.96 74.93) (xy 60.96 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c6e72bd1-00e3-4f5d-9037-e5b996fc2457")
+	)
+	(wire
+		(pts
+			(xy 33.02 31.75) (xy 40.64 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c9428d64-9435-4191-8b4a-70137340ff6e")
+	)
+	(wire
+		(pts
+			(xy 105.41 41.91) (xy 106.68 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ce2373d8-e9ab-4e4d-9813-667e47054e84")
+	)
+	(wire
+		(pts
+			(xy 195.58 60.96) (xy 195.58 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ce84749a-e08d-44ab-9557-6881ccc8ccde")
+	)
+	(wire
+		(pts
+			(xy 199.39 39.37) (xy 207.01 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cfb5677f-4c4e-4e7f-8234-057977055934")
+	)
+	(wire
+		(pts
+			(xy 33.02 46.99) (xy 40.64 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d08e4850-8b20-4dc8-8729-f6941f5cdaef")
+	)
+	(wire
+		(pts
+			(xy 69.85 27.94) (xy 77.47 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d33f9ccb-69e1-45e3-a7ab-11be8dcd763f")
+	)
+	(wire
+		(pts
+			(xy 40.64 153.67) (xy 66.04 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d36ae0f8-2a7a-4b37-8201-d1e5e5854f97")
+	)
+	(wire
+		(pts
+			(xy 234.95 29.21) (xy 234.95 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d36cd2cb-c840-49c0-a3e4-11d9c605b26d")
+	)
+	(wire
+		(pts
+			(xy 187.96 44.45) (xy 189.23 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d586fbf9-9648-40ca-9416-0631f0be2958")
+	)
+	(wire
+		(pts
+			(xy 270.51 66.04) (xy 271.78 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d647a7d0-9b23-4dfd-90e2-5ad8646cf985")
+	)
+	(wire
+		(pts
+			(xy 180.34 64.77) (xy 180.34 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d647eeb2-1628-49ce-816b-5d1ef7a094f3")
+	)
+	(wire
+		(pts
+			(xy 68.58 50.8) (xy 68.58 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d74faccd-98bc-4543-89b3-203b7251f90c")
+	)
+	(wire
+		(pts
+			(xy 87.63 64.77) (xy 87.63 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d7b81a31-0546-46b6-99c4-756e56abf6d3")
+	)
+	(wire
+		(pts
+			(xy 270.51 76.2) (xy 271.78 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d7d8d2cc-ba4f-4d2d-a0c1-18bab55bd6c6")
+	)
+	(wire
+		(pts
+			(xy 52.07 64.77) (xy 52.07 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "df4d1632-ee1a-4ca6-98bd-dc70f85add9e")
+	)
+	(wire
+		(pts
+			(xy 40.64 161.29) (xy 66.04 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e31d0a42-4a06-43a2-8a07-183c360080d9")
+	)
+	(wire
+		(pts
+			(xy 105.41 46.99) (xy 106.68 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e35b2bb9-115e-4c87-9ea7-6e7095e75c98")
+	)
+	(wire
+		(pts
+			(xy 41.91 34.29) (xy 40.64 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e91223e5-5214-411b-bce7-f07b1f89efc7")
+	)
+	(wire
+		(pts
+			(xy 180.34 74.93) (xy 180.34 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e9ec3bff-3dcd-4138-a7de-35415b31b88f")
+	)
+	(wire
+		(pts
+			(xy 43.18 74.93) (xy 43.18 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ebe174eb-e166-4d25-b5c3-e5cadcaa6015")
+	)
+	(wire
+		(pts
+			(xy 78.74 74.93) (xy 78.74 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ec8b5557-f7dc-4de9-9d3f-18751bb16ec8")
+	)
+	(wire
+		(pts
+			(xy 125.73 64.77) (xy 125.73 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ed7d1ba3-adbd-4b5c-9234-941e884d2a23")
+	)
+	(wire
+		(pts
+			(xy 33.02 34.29) (xy 40.64 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f1230c39-2ca7-4982-979c-c50366976707")
+	)
+	(wire
+		(pts
+			(xy 270.51 78.74) (xy 271.78 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f1ef6ab1-1429-413d-a1f0-214ec9bf2af5")
+	)
+	(wire
+		(pts
+			(xy 105.41 36.83) (xy 106.68 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f5a724af-9ec0-4f15-b182-0ac6a6675e53")
+	)
+	(wire
+		(pts
+			(xy 160.02 29.21) (xy 160.02 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f68e5d91-084c-469b-82de-fbae3f4e21a8")
+	)
+	(wire
+		(pts
+			(xy 160.02 27.94) (xy 160.02 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f9447cd0-fe6e-4bce-8043-3fd54f6ec6b2")
+	)
+	(label "Display8Gnd"
+		(at 242.57 83.82 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "021f0bc1-7e95-42b4-b995-84a584e3064e")
+	)
+	(label "E_7seg"
+		(at 40.64 125.73 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "037b7250-f3fe-4704-a3b6-595995215c50")
+	)
+	(label "A_7seg"
+		(at 43.18 77.47 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "05799006-7399-42de-a4cb-4ec4ecc69c5b")
+	)
+	(label "B_7seg2.3"
+		(at 271.78 63.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "05f1c302-f92a-47a6-aca5-d76053632043")
+	)
+	(label "D_7seg2.3"
+		(at 224.79 68.58 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "06a31f07-fdcf-4102-a7a8-9c38fa3525a6")
+	)
+	(label "F_7seg"
+		(at 40.64 128.27 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0b866a5f-73f6-401b-93ea-1fb48a0b138c")
+	)
+	(label "B_7seg4"
+		(at 116.84 36.83 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0cf9e06d-9e44-4c9f-8760-16eaf6323121")
+	)
+	(label "DP_7segR"
+		(at 271.78 78.74 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0d6b0011-084e-477c-8dfb-441e83519096")
+	)
+	(label "F_7seg2.3"
+		(at 224.79 73.66 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0e38c166-e66e-4cb5-94e8-44972fd8f54d")
+	)
+	(label "DP_7seg"
+		(at 24.13 77.47 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "10539da4-cae4-450e-91c5-168fb977b04e")
+	)
+	(label "D_7seg2.3"
+		(at 148.59 64.77 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "108b1800-0185-4b95-ace1-464de2311209")
+	)
+	(label "F_7seg4"
+		(at 189.23 41.91 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "168ef178-dc49-4fd4-92df-0ac35736dff4")
+	)
+	(label "G_7seg4"
+		(at 106.68 44.45 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "19619abf-a92d-4ce9-be1b-fbc166f957b4")
+	)
+	(label "G_7seg4"
+		(at 116.84 31.75 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1ad71ef7-9747-4a0e-b704-61489138f25e")
+	)
+	(label "Display5Gnd"
+		(at 234.95 50.8 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1bcc14e3-a698-4d57-9567-e20f3e59a8eb")
+	)
+	(label "DP_7segR"
+		(at 224.79 78.74 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1c9bc4e4-99e5-4430-adcc-40052ef442d9")
+	)
+	(label "B_7seg2.3"
+		(at 125.73 64.77 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1e46cc6f-4fd0-49e5-a3f6-c63ff31abd0f")
+	)
+	(label "E_7seg2.3"
+		(at 271.78 71.12 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1ffb5755-ae35-4ade-b3ac-07b053856760")
+	)
+	(label "E_7seg4"
+		(at 199.39 44.45 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "20582d24-e5f1-44cf-8519-cdefb902811f")
+	)
+	(label "A_7Seg2.3"
+		(at 224.79 60.96 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "23937245-736e-42be-89a8-7ff1d6273400")
+	)
+	(label "F_7seg4"
+		(at 106.68 41.91 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "25171c11-1748-4048-9e4d-68de5b624f61")
+	)
+	(label "G_7seg4"
+		(at 189.23 44.45 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "26c84944-d0c9-41f9-9815-351f903bbf64")
+	)
+	(label "E_7seg2.3"
+		(at 160.02 64.77 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "275b74af-07e9-45fb-8dcf-e889e8dbbc1a")
+	)
+	(label "A_7Seg4"
+		(at 199.39 39.37 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2d06f18b-a051-4b40-961a-8fc4755780c4")
+	)
+	(label "C_7seg"
+		(at 60.96 77.47 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "308b7dd8-f11c-423f-8c49-f0c1df9f0d5a")
+	)
+	(label "D_7seg"
+		(at 69.85 77.47 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "35020825-d790-4901-8242-0bd60b3ea24e")
+	)
+	(label "G_7seg2.3"
+		(at 180.34 64.77 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3508c44d-a65d-40df-bd63-e60b7dbc4833")
+	)
+	(label "Display4Gnd"
+		(at 152.4 27.94 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3586ce03-02fb-4767-8d8b-6a7b0763cc09")
+	)
+	(label "D_7seg"
+		(at 148.59 77.47 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "37174b33-14d1-40c9-8a74-bb6b866c30f2")
+	)
+	(label "A_7Seg4"
+		(at 189.23 29.21 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "38c422c4-0206-4db4-adac-50b232a3ca2a")
+	)
+	(label "B_7seg4"
+		(at 199.39 36.83 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "41543cf1-1924-423f-b7ba-99680a5259c1")
+	)
+	(label "F_7seg"
+		(at 170.18 77.47 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "41b1658c-c985-43b2-bf31-0744550deb86")
+	)
+	(label "D_7seg2.3"
+		(at 271.78 68.58 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "423204e2-c3a5-4ffa-b25b-4b990a9bae63")
+	)
+	(label "C_7seg4"
+		(at 33.02 34.29 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "45c17771-1d24-41d9-95c7-533d697917cb")
+	)
+	(label "A_7Seg4"
+		(at 106.68 29.21 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4995e415-091f-4ee1-8afd-e69431d5365b")
+	)
+	(label "Display7Gnd"
+		(at 40.64 158.75 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4a242824-035c-42b3-bd4e-3c5ed9f044f6")
+	)
+	(label "C_7seg4"
+		(at 271.78 34.29 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4b1416c9-4cd3-4167-b0a5-9c9831f68687")
+	)
+	(label "Display2Gnd"
+		(at 40.64 146.05 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4dae885f-3412-4718-b3f1-735b049ea023")
+	)
+	(label "E_7seg4"
+		(at 78.74 64.77 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "51265c86-304c-40b7-b0dd-0d1ef832fcfd")
+	)
+	(label "C_7seg4"
+		(at 116.84 34.29 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "51a7090b-568c-4129-a803-8cb492614bf3")
+	)
+	(label "Display6Gnd"
+		(at 40.64 156.21 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "54efce71-dd8e-46b8-9c74-f84f831b9728")
+	)
+	(label "Display5Gnd"
+		(at 40.64 153.67 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "55f2b1a4-a9a7-4ca2-91f9-586d389f4f20")
+	)
+	(label "D_7seg4"
+		(at 33.02 46.99 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5a297908-8a52-4551-ac3c-b08ef286f51a")
+	)
+	(label "DP_7segR"
+		(at 116.84 29.21 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5bff1e88-10f8-4f03-a759-5642397abe01")
+	)
+	(label "D_7seg4"
+		(at 189.23 36.83 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5ee1cff5-1d76-469e-9b0b-1675023a0fd3")
+	)
+	(label "E_7seg4"
+		(at 189.23 39.37 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "65853e69-17a9-45bc-a390-5001de5ff1c3")
+	)
+	(label "C_7seg"
+		(at 40.64 120.65 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "65f6c554-3649-4279-b40b-288768b8cd85")
+	)
+	(label "B_7seg4"
+		(at 33.02 36.83 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6871383b-e7f9-4637-b8b4-566b3049c339")
+	)
+	(label "C_7seg4"
+		(at 60.96 64.77 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6a0308ff-9de3-40d4-9df9-25f0b9f8b9ff")
+	)
+	(label "A_7Seg4"
+		(at 43.18 64.77 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6a299f89-02ab-4223-a7d6-f3189e0c7005")
+	)
+	(label "G_7seg"
+		(at 40.64 130.81 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6c23c1da-1aff-40a2-91bb-0f4a954f0c3b")
+	)
+	(label "C_7seg2.3"
+		(at 137.16 64.77 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6dff4966-0de7-4f53-9240-47c9fd62066b")
+	)
+	(label "C_7seg4"
+		(at 189.23 34.29 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "73e7192a-1003-4a62-b905-ef9e6b8e32b2")
+	)
+	(label "D_7seg4"
+		(at 69.85 64.77 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "74c6a008-2cb6-4845-9e4b-c4e091202006")
+	)
+	(label "D_7seg4"
+		(at 106.68 36.83 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7543de00-598d-4ffb-b44c-585d42bbc4dd")
+	)
+	(label "A_7Seg4"
+		(at 33.02 39.37 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "77f9a082-7457-4835-84ef-de3e50cd082a")
+	)
+	(label "G_7seg"
+		(at 96.52 77.47 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7aaf0c45-70e4-478b-b34d-7f3b65594911")
+	)
+	(label "B_7seg2.3"
+		(at 224.79 63.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7d1bd5da-55df-411b-b742-0763901c0afa")
+	)
+	(label "A_7Seg2.3"
+		(at 114.3 64.77 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7fa3e73d-9894-41cf-8f67-b7734d294e3b")
+	)
+	(label "C_7seg4"
+		(at 106.68 34.29 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "81dc4563-291a-4de0-8481-a9ea0366b079")
+	)
+	(label "Display6Gnd"
+		(at 234.95 27.94 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "82740af8-62fc-418a-9d9a-d8b9b2014ea0")
+	)
+	(label "E_7seg"
+		(at 78.74 77.47 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "875f674e-ea89-43f9-aad0-4e8c23bf23e7")
+	)
+	(label "F_7seg2.3"
+		(at 170.18 64.77 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8809f798-85ac-4bf5-b8b5-ea3e6371d0f8")
+	)
+	(label "Display7Gnd"
+		(at 195.58 83.82 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "891d4bd9-581f-49d7-8eee-67e3d27791f5")
+	)
+	(label "D_7seg"
+		(at 40.64 123.19 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8d170b1e-9a2c-45c3-a9db-a0868faddd46")
+	)
+	(label "D_7seg4"
+		(at 271.78 36.83 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8dea6041-b2cf-4a1a-ae3d-c990735059e7")
+	)
+	(label "G_7seg2.3"
+		(at 224.79 76.2 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8fb3a7f1-07ae-4d68-aa6a-749e5a7b1f67")
+	)
+	(label "G_7seg4"
+		(at 199.39 31.75 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "91a7f105-00ff-4a2c-9d66-0fdde0155a45")
+	)
+	(label "B_7seg"
+		(at 40.64 118.11 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "92d8ad8d-84e7-4032-b036-6e14d8c4a21f")
+	)
+	(label "Display2Gnd"
+		(at 69.85 27.94 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "94769021-74b1-4ae9-869d-55e82ff8d47e")
+	)
+	(label "F_7seg4"
+		(at 271.78 41.91 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "973ba48f-aa89-4f53-a3ea-75631f5bc9f4")
+	)
+	(label "C_7seg"
+		(at 137.16 77.47 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "996d5d2d-3786-487a-8423-072023cca9a8")
+	)
+	(label "A_7Seg4"
+		(at 271.78 29.21 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "99a58e57-6c01-4300-845e-9e8f36380a9d")
+	)
+	(label "F_7seg2.3"
+		(at 271.78 73.66 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9f4b8f2d-5620-497d-9385-29bc13b5715c")
+	)
+	(label "C_7seg2.3"
+		(at 224.79 66.04 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9fb61544-0325-499a-8b9c-dfd9e6699f7d")
+	)
+	(label "C_7seg4"
+		(at 199.39 34.29 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a190bcfe-d221-498e-b1a5-2dc5ec6a6cfa")
+	)
+	(label "Display1Gnd"
+		(at 40.64 143.51 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a1c97412-f031-4066-8afa-1a81c70e9b06")
+	)
+	(label "F_7seg4"
+		(at 33.02 41.91 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a7b39f96-1fb4-44d8-a9ed-f37577d4a5ed")
+	)
+	(label "E_7seg2.3"
+		(at 224.79 71.12 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a84f110d-e4ad-43c7-a624-0511ca0e4687")
+	)
+	(label "D_7seg4"
+		(at 116.84 46.99 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a86865df-5a14-48de-99d9-ff83437493f5")
+	)
+	(label "B_7seg"
+		(at 52.07 77.47 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a8823233-3158-4354-82e0-3fd7ee78a586")
+	)
+	(label "E_7seg4"
+		(at 33.02 44.45 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "aee75a5a-c049-4767-bbe0-59c734afecef")
+	)
+	(label "E_7seg4"
+		(at 116.84 44.45 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "af060f89-b317-483e-a84d-c6d4c9fc2917")
+	)
+	(label "DP_7segR"
+		(at 189.23 46.99 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b112ec34-35fd-4292-a796-d8708eed8dfe")
+	)
+	(label "Display4Gnd"
+		(at 40.64 151.13 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b1477004-0aea-4b32-a124-a2f635747394")
+	)
+	(label "Display1Gnd"
+		(at 68.58 50.8 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b342529c-df74-427c-8841-402b1288d932")
+	)
+	(label "DP_7segR"
+		(at 271.78 46.99 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b5eaa11f-1ff0-4997-8ef5-a0f99579ab3d")
+	)
+	(label "G_7seg4"
+		(at 271.78 44.45 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b9dfafd0-a0f9-490c-a5d4-31a18525c8bb")
+	)
+	(label "G_7seg4"
+		(at 96.52 64.77 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c266c7d4-6504-4b02-9e2a-e8c2e11903ec")
+	)
+	(label "DP_7segR"
+		(at 33.02 29.21 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c61c04db-4ac7-4297-94b2-da7609c141c1")
+	)
+	(label "Display3Gnd"
+		(at 152.4 50.8 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c8bdb6fd-8b98-4b20-bf8f-a067bf437d3c")
+	)
+	(label "D_7seg4"
+		(at 199.39 46.99 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ca24d131-3203-4cba-91bb-d20551c49750")
+	)
+	(label "G_7seg2.3"
+		(at 271.78 76.2 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d1996e97-5cea-4965-b357-186b17f0a4aa")
+	)
+	(label "B_7seg4"
+		(at 271.78 31.75 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d1f3e622-cf7a-496d-ad15-d020a8bd1fcb")
+	)
+	(label "C_7seg2.3"
+		(at 271.78 66.04 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d4c82869-353a-4cb3-8cac-831daafd6c82")
+	)
+	(label "E_7seg4"
+		(at 106.68 39.37 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d7f6e3f7-d604-45c8-9853-722dc877deca")
+	)
+	(label "DP_7seg"
+		(at 40.64 133.35 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d98f01a1-f779-416e-95f8-1ce726ef831d")
+	)
+	(label "F_7seg"
+		(at 87.63 77.47 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "da6bdcdf-fd7d-4a72-961e-85986669d54f")
+	)
+	(label "F_7seg4"
+		(at 199.39 41.91 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "dae124cf-68d4-4cac-b2eb-d8c7f8c1f475")
+	)
+	(label "Display3Gnd"
+		(at 40.64 148.59 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "db90ef5a-6c10-4f1b-8af1-c1881faed1bb")
+	)
+	(label "A_7Seg4"
+		(at 116.84 39.37 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "de495973-d223-4797-9161-28858182a4a0")
+	)
+	(label "A_7seg"
+		(at 114.3 77.47 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "dee01324-f3ff-46a8-a81c-fa90805df464")
+	)
+	(label "Display8Gnd"
+		(at 40.64 161.29 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e2ecc836-7279-4f3d-8590-869bb100a21f")
+	)
+	(label "G_7seg"
+		(at 180.34 77.47 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e39fca01-df9b-4510-bea2-8e10a91e6241")
+	)
+	(label "DP_7segR"
+		(at 199.39 29.21 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e4938e57-0dcd-4e67-bb6d-c12235bbc537")
+	)
+	(label "A_7Seg2.3"
+		(at 271.78 60.96 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e5469aff-1711-4958-ab33-fb8cb5ba49ac")
+	)
+	(label "G_7seg4"
+		(at 33.02 31.75 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e63d73f1-83c2-4213-9b32-d7bcbb27f5dc")
+	)
+	(label "DP_7segR"
+		(at 24.13 64.77 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ebd62020-8f43-4c21-93d1-8134881a98ec")
+	)
+	(label "F_7seg4"
+		(at 87.63 64.77 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f0cb32d7-794a-439d-bdf9-da13f20d9850")
+	)
+	(label "E_7seg4"
+		(at 271.78 39.37 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f3c95cac-09a6-4f1a-877c-7a6c46ccfb7b")
+	)
+	(label "B_7seg4"
+		(at 106.68 31.75 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f42283ad-5890-4adc-b8f3-fd3dd31d5a99")
+	)
+	(label "F_7seg4"
+		(at 116.84 41.91 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f5619e67-2aaf-427b-91e1-0416a25d1d9c")
+	)
+	(label "B_7seg"
+		(at 125.73 77.47 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f78aa4bb-5326-4eea-887f-14ab5bc67725")
+	)
+	(label "A_7seg"
+		(at 40.64 115.57 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f8692452-b042-4795-8034-ce4bec0e416e")
+	)
+	(label "B_7seg4"
+		(at 189.23 31.75 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f8dbcc23-b9cb-4e2b-8cfd-6468eabb47ac")
+	)
+	(label "DP_7segR"
+		(at 106.68 46.99 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f8e775b9-75c7-402a-a331-bdce218c0d00")
+	)
+	(label "E_7seg"
+		(at 160.02 77.47 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f93bbc4f-761f-4469-b039-ce01178805d8")
+	)
+	(label "B_7seg4"
+		(at 52.07 64.77 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "fb791a11-809f-460d-8e97-bb99e1a45337")
+	)
+	(hierarchical_label "C_7Seg"
+		(shape input)
+		(at 66.04 120.65 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "15026add-9070-46c7-bbb2-ad0d015caf88")
+	)
+	(hierarchical_label "Display2Gnd"
+		(shape input)
+		(at 66.04 146.05 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "1816980e-f702-4263-bcf7-662b704298b5")
+	)
+	(hierarchical_label "G_7Seg"
+		(shape input)
+		(at 66.04 130.81 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "2ef63b9b-8b21-4aeb-9b40-c865ebdc58b6")
+	)
+	(hierarchical_label "Display3Gnd"
+		(shape input)
+		(at 66.04 148.59 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "38bc6633-8abe-4085-b672-283f05501349")
+	)
+	(hierarchical_label "Display6Gnd"
+		(shape input)
+		(at 66.04 156.21 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "4ce727ee-9584-4cc1-a446-da391662e859")
+	)
+	(hierarchical_label "Display1Gnd"
+		(shape input)
+		(at 66.04 143.51 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "6d685321-a7d1-4952-9ca2-2f4d921c3629")
+	)
+	(hierarchical_label "D_7Seg"
+		(shape input)
+		(at 66.04 123.19 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "6f9d7785-0fe0-49fa-af8a-3d8f190d22e5")
+	)
+	(hierarchical_label "A_7Seg"
+		(shape input)
+		(at 66.04 115.57 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "72dbc61c-4ea2-4206-9af2-55b5dec84d8a")
+	)
+	(hierarchical_label "F_7Seg"
+		(shape input)
+		(at 66.04 128.27 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b2522a71-500f-4d41-9519-9d34cbd9c043")
+	)
+	(hierarchical_label "DP_7Seg"
+		(shape input)
+		(at 66.04 133.35 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ba86871e-4df4-420f-a75b-f2c1a513ed7d")
+	)
+	(hierarchical_label "B_7Seg"
+		(shape input)
+		(at 66.04 118.11 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c2aaa200-39f4-449f-ae98-a65205d7219a")
+	)
+	(hierarchical_label "E_7Seg"
+		(shape input)
+		(at 66.04 125.73 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c3da0b48-e1e0-40b5-8693-0c5a40168ee3")
+	)
+	(hierarchical_label "Display7Gnd"
+		(shape input)
+		(at 66.04 158.75 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c9891dfe-f8e8-4bce-8b73-64e8bce36301")
+	)
+	(hierarchical_label "Display5Gnd"
+		(shape input)
+		(at 66.04 153.67 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "cedd1044-8be9-45bb-998c-569618e429ee")
+	)
+	(hierarchical_label "Display8Gnd"
+		(shape input)
+		(at 66.04 161.29 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d29a00b6-03bf-47e1-94c5-25de3d02f2af")
+	)
+	(hierarchical_label "Display4Gnd"
+		(shape input)
+		(at 66.04 151.13 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "db31510e-df12-445a-96e0-0da2f287feba")
+	)
+	(symbol
+		(lib_id "RelogioGRS_Library:WCN1-00B2SR-C11S")
+		(at 256.54 76.2 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0db083fe-eb4e-4ad4-a839-8a575b72367b")
+		(property "Reference" "DS16"
+			(at 256.54 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WCN1-00B2SR-C11S"
+			(at 256.54 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 256.54 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 256.54 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "7-Segment LED Display, 2.3 pol., Red, Common Cathode, 10 pin"
+			(at 256.54 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "10"
+			(uuid "be19d9d1-d190-4945-8b56-6c9eb5923ec9")
+		)
+		(pin "9"
+			(uuid "d710bd7e-a562-4985-8c39-a55f675955bb")
+		)
+		(pin "1"
+			(uuid "5abf2e3e-c737-4df2-8aab-f15b394f11ed")
+		)
+		(pin "6"
+			(uuid "39a6dddf-b709-47d7-982a-cebf36e7b781")
+		)
+		(pin "2"
+			(uuid "c8a5e904-ba1d-4495-8502-d66b3a2c19d4")
+		)
+		(pin "8"
+			(uuid "4044f834-d8bd-4484-a91b-04e574cae8dc")
+		)
+		(pin "7"
+			(uuid "e09d7159-63c1-4ad0-a92f-afed99af368f")
+		)
+		(pin "5"
+			(uuid "1c9d82a7-c029-464e-8339-855f5d51edbf")
+		)
+		(pin "3"
+			(uuid "ecf328b4-e206-4d97-ac6b-836eb30c138e")
+		)
+		(pin "4"
+			(uuid "25334691-f389-489d-a175-fa346beb9d35")
+		)
+		(instances
+			(project "RelogioGRS"
+				(path "/c5089fae-3fc0-463b-a1cd-29d25b5e00c5/88c473a8-a79d-4818-8d16-2e360f67bb0b/28ad286a-f156-4570-a614-122f36db2ce2/c6d43c11-d9cc-4280-bede-f7b300bdbe50"
+					(reference "DS16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 60.96 71.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1582a68e-a76e-4d11-883c-a606fa4d6138")
+		(property "Reference" "R13"
+			(at 63.5 69.8499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "33"
+			(at 63.5 72.3899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 59.182 71.12 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 60.96 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 60.96 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "3f0db49d-415d-4719-94c9-bb844cc69e7e")
+		)
+		(pin "1"
+			(uuid "cfa7cf23-6b3c-4b9b-8f7c-beb914009f7b")
+		)
+		(instances
+			(project "RelogioGRS"
+				(path "/c5089fae-3fc0-463b-a1cd-29d25b5e00c5/88c473a8-a79d-4818-8d16-2e360f67bb0b/28ad286a-f156-4570-a614-122f36db2ce2/c6d43c11-d9cc-4280-bede-f7b300bdbe50"
+					(reference "R13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 160.02 71.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2061b453-fe51-446b-a9ac-730bb9beea84")
+		(property "Reference" "R25"
+			(at 162.56 69.8499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "47"
+			(at 162.56 72.3899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 158.242 71.12 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 160.02 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 160.02 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "4023201d-3e34-4564-b60d-f9236505af6d")
+		)
+		(pin "1"
+			(uuid "0325c490-8d80-46ce-8282-b7aab9dbc46a")
+		)
+		(instances
+			(project "RelogioGRS"
+				(path "/c5089fae-3fc0-463b-a1cd-29d25b5e00c5/88c473a8-a79d-4818-8d16-2e360f67bb0b/28ad286a-f156-4570-a614-122f36db2ce2/c6d43c11-d9cc-4280-bede-f7b300bdbe50"
+					(reference "R25")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 78.74 71.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "27079dc0-1f2a-4ac6-a1f7-df771bf9f895")
+		(property "Reference" "R15"
+			(at 81.28 69.8499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "33"
+			(at 81.28 72.3899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 76.962 71.12 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 78.74 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 78.74 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "1a21519c-7f9d-498f-b806-32b0446327bc")
+		)
+		(pin "1"
+			(uuid "2531f86e-24e7-4a00-87a5-14a31e1a00d2")
+		)
+		(instances
+			(project "RelogioGRS"
+				(path "/c5089fae-3fc0-463b-a1cd-29d25b5e00c5/88c473a8-a79d-4818-8d16-2e360f67bb0b/28ad286a-f156-4570-a614-122f36db2ce2/c6d43c11-d9cc-4280-bede-f7b300bdbe50"
+					(reference "R15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 148.59 71.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "30a7c89d-dd6a-40dc-b8be-fb973f4f6b0c")
+		(property "Reference" "R24"
+			(at 151.13 69.8499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "47"
+			(at 151.13 72.3899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 146.812 71.12 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 148.59 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 148.59 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "24437815-8104-4f42-88f1-3c6538db4b2f")
+		)
+		(pin "1"
+			(uuid "71e1ebe7-ff26-400c-a610-c41856d7ef29")
+		)
+		(instances
+			(project "RelogioGRS"
+				(path "/c5089fae-3fc0-463b-a1cd-29d25b5e00c5/88c473a8-a79d-4818-8d16-2e360f67bb0b/28ad286a-f156-4570-a614-122f36db2ce2/c6d43c11-d9cc-4280-bede-f7b300bdbe50"
+					(reference "R24")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 137.16 71.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "35c47056-b44e-4f60-8e65-017629e9f9d6")
+		(property "Reference" "R23"
+			(at 139.7 69.8499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "47"
+			(at 139.7 72.3899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 135.382 71.12 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 137.16 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 137.16 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "ce6ef940-1d70-45b5-a160-03b1cb8055cb")
+		)
+		(pin "1"
+			(uuid "0535eba7-7044-462c-9ee4-8d6e66dd217e")
+		)
+		(instances
+			(project "RelogioGRS"
+				(path "/c5089fae-3fc0-463b-a1cd-29d25b5e00c5/88c473a8-a79d-4818-8d16-2e360f67bb0b/28ad286a-f156-4570-a614-122f36db2ce2/c6d43c11-d9cc-4280-bede-f7b300bdbe50"
+					(reference "R23")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 87.63 71.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3fc9a9ca-26ba-444e-bd53-6178f46a7152")
+		(property "Reference" "R16"
+			(at 90.17 69.8499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "33"
+			(at 90.17 72.3899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 85.852 71.12 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 87.63 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 87.63 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "4fe2e1f3-d39e-4f58-bf11-6015a3c4bcd6")
+		)
+		(pin "1"
+			(uuid "a0b2d109-777f-433d-a700-5aed1ba494a1")
+		)
+		(instances
+			(project "RelogioGRS"
+				(path "/c5089fae-3fc0-463b-a1cd-29d25b5e00c5/88c473a8-a79d-4818-8d16-2e360f67bb0b/28ad286a-f156-4570-a614-122f36db2ce2/c6d43c11-d9cc-4280-bede-f7b300bdbe50"
+					(reference "R16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 180.34 71.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "60b1bb46-63dd-4a42-9393-eefde875bae5")
+		(property "Reference" "R27"
+			(at 182.88 69.8499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "47"
+			(at 182.88 72.3899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 178.562 71.12 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 180.34 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 180.34 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "a15f968f-de2d-45aa-905f-51bbcc6325d4")
+		)
+		(pin "1"
+			(uuid "def00e77-053d-4c60-ae8e-2e72f27e8254")
+		)
+		(instances
+			(project "RelogioGRS"
+				(path "/c5089fae-3fc0-463b-a1cd-29d25b5e00c5/88c473a8-a79d-4818-8d16-2e360f67bb0b/28ad286a-f156-4570-a614-122f36db2ce2/c6d43c11-d9cc-4280-bede-f7b300bdbe50"
+					(reference "R27")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 114.3 71.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "661927bf-0046-4501-b27a-9044664c42a8")
+		(property "Reference" "R21"
+			(at 116.84 69.8499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "47"
+			(at 116.84 72.3899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 112.522 71.12 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 114.3 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 114.3 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "bee6350f-5e2e-48a2-ab92-6598c7a75ade")
+		)
+		(pin "1"
+			(uuid "a05aeea5-bcde-46e1-b56c-5875f562ae1b")
+		)
+		(instances
+			(project "RelogioGRS"
+				(path "/c5089fae-3fc0-463b-a1cd-29d25b5e00c5/88c473a8-a79d-4818-8d16-2e360f67bb0b/28ad286a-f156-4570-a614-122f36db2ce2/c6d43c11-d9cc-4280-bede-f7b300bdbe50"
+					(reference "R21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RelogioGRS_Library:WCN1-00B2SR-C11S")
+		(at 209.55 76.2 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "72139983-c363-4fb9-b35a-cf3c80a83391")
+		(property "Reference" "DS15"
+			(at 209.55 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WCN1-00B2SR-C11S"
+			(at 209.55 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 209.55 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 209.55 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "7-Segment LED Display, 2.3 pol., Red, Common Cathode, 10 pin"
+			(at 209.55 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "5"
+			(uuid "be489d03-dd89-4b03-b61b-d0bb76a1e1bc")
+		)
+		(pin "1"
+			(uuid "553332ec-b030-40d2-b288-17dd2e8c0062")
+		)
+		(pin "9"
+			(uuid "dd800264-2dcf-4dcc-a167-20ca12130bb5")
+		)
+		(pin "4"
+			(uuid "cb314b52-6d82-4e33-a3dd-c1135d336291")
+		)
+		(pin "6"
+			(uuid "3e9fab02-7243-4078-a0ad-942488571d28")
+		)
+		(pin "10"
+			(uuid "d08da4ef-bf1b-42c2-84d6-b0466fe0bc56")
+		)
+		(pin "7"
+			(uuid "d2666d90-f75b-4eb7-9847-effae6aa10b3")
+		)
+		(pin "3"
+			(uuid "b4b4d983-b39d-4a32-beac-4efe57e1a2d9")
+		)
+		(pin "8"
+			(uuid "e3496cf8-3cd7-4b2e-8ba3-f21dc0035510")
+		)
+		(pin "2"
+			(uuid "dcf4e84b-1120-4287-9018-2dabf9bebcab")
+		)
+		(instances
+			(project "RelogioGRS"
+				(path "/c5089fae-3fc0-463b-a1cd-29d25b5e00c5/88c473a8-a79d-4818-8d16-2e360f67bb0b/28ad286a-f156-4570-a614-122f36db2ce2/c6d43c11-d9cc-4280-bede-f7b300bdbe50"
+					(reference "DS15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 43.18 71.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7a4c5380-875a-40ac-9c3c-7411b015ea0a")
+		(property "Reference" "R11"
+			(at 45.72 69.8499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "33"
+			(at 45.72 72.3899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 41.402 71.12 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 43.18 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 43.18 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "cfe0bbb0-0301-4b6f-8d94-856704671888")
+		)
+		(pin "1"
+			(uuid "4fd5017e-85e4-48ef-988f-4d3ee9bae58e")
+		)
+		(instances
+			(project "RelogioGRS"
+				(path "/c5089fae-3fc0-463b-a1cd-29d25b5e00c5/88c473a8-a79d-4818-8d16-2e360f67bb0b/28ad286a-f156-4570-a614-122f36db2ce2/c6d43c11-d9cc-4280-bede-f7b300bdbe50"
+					(reference "R11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 96.52 71.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7e8a6419-83ad-42cf-9400-c32d53425bc1")
+		(property "Reference" "R17"
+			(at 99.06 69.8499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "33"
+			(at 99.06 72.3899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 94.742 71.12 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 96.52 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 96.52 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "2e25bfe4-10a0-49e2-80ea-d952732c1641")
+		)
+		(pin "1"
+			(uuid "9a00c4bd-4630-4851-a87d-7fb459a6d90f")
+		)
+		(instances
+			(project "RelogioGRS"
+				(path "/c5089fae-3fc0-463b-a1cd-29d25b5e00c5/88c473a8-a79d-4818-8d16-2e360f67bb0b/28ad286a-f156-4570-a614-122f36db2ce2/c6d43c11-d9cc-4280-bede-f7b300bdbe50"
+					(reference "R17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RelogioGRS_Library:WCN1-00D0SR-C11S")
+		(at 54.61 31.75 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8c08eccd-c141-4fca-81af-6dfc3fcc7fc3")
+		(property "Reference" "DS9"
+			(at 54.61 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WCN1-00D0SR-C11S"
+			(at 54.61 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 54.61 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 54.61 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "7-Segment LED Display, 4.0 pol., Super Red, Common Cathode, 10 pin"
+			(at 54.61 17.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "5"
+			(uuid "b0e79895-2620-404f-b54e-b343c9f3733d")
+		)
+		(pin "1"
+			(uuid "ae6a7faf-0e53-454c-aa29-7a0e6c44cb9a")
+		)
+		(pin "8"
+			(uuid "5f23be2a-92dd-4753-b424-8d7765b0877f")
+		)
+		(pin "7"
+			(uuid "626b6c58-8fac-4dd3-aa91-77adcd34c785")
+		)
+		(pin "6"
+			(uuid "20fc195c-146c-431a-aaa1-2ee71f53f28a")
+		)
+		(pin "4"
+			(uuid "d709267b-1d08-47cb-a9fa-d5b3b3282b0e")
+		)
+		(pin "3"
+			(uuid "fc681bfa-c87d-4f2c-86cd-929af95b165a")
+		)
+		(pin "2"
+			(uuid "cc635f94-44be-409f-b75e-eef46f910292")
+		)
+		(pin "10"
+			(uuid "12464dc8-b494-40bc-aefd-8885cb5dad99")
+		)
+		(pin "9"
+			(uuid "1cbf56f2-2804-4f5b-af0f-9b01602e8e92")
+		)
+		(instances
+			(project "RelogioGRS"
+				(path "/c5089fae-3fc0-463b-a1cd-29d25b5e00c5/88c473a8-a79d-4818-8d16-2e360f67bb0b/28ad286a-f156-4570-a614-122f36db2ce2/c6d43c11-d9cc-4280-bede-f7b300bdbe50"
+					(reference "DS9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RelogioGRS_Library:WCN1-00D0SR-C11S")
+		(at 173.99 44.45 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "919d3afa-0e10-400c-8990-636694c4d3db")
+		(property "Reference" "DS12"
+			(at 173.99 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WCN1-00D0SR-C11S"
+			(at 173.99 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 173.99 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 173.99 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "7-Segment LED Display, 4.0 pol., Super Red, Common Cathode, 10 pin"
+			(at 173.99 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "b246ab18-4a10-42ff-ba6e-0036449dc9f1")
+		)
+		(pin "4"
+			(uuid "bd70a9e4-29df-4714-b385-8f29909d88b7")
+		)
+		(pin "7"
+			(uuid "908fab52-1a6c-4c4d-aa86-4dda5b3accbb")
+		)
+		(pin "2"
+			(uuid "67d79ce2-e696-406a-87cb-fb8b8e74056f")
+		)
+		(pin "6"
+			(uuid "ae27a525-b39e-46d4-8682-3cbe7d556175")
+		)
+		(pin "5"
+			(uuid "b9a0a52b-1b22-4fb7-9319-70318a4332ab")
+		)
+		(pin "1"
+			(uuid "8abf47cf-852c-4bb9-ada3-59017219c48d")
+		)
+		(pin "10"
+			(uuid "ccb8e418-be86-41de-ad4d-d55f4e3c1186")
+		)
+		(pin "9"
+			(uuid "e39b54cc-51d1-450a-80f5-b3e93b48e269")
+		)
+		(pin "8"
+			(uuid "d7a78000-0937-4ade-b84b-a512cd254372")
+		)
+		(instances
+			(project "RelogioGRS"
+				(path "/c5089fae-3fc0-463b-a1cd-29d25b5e00c5/88c473a8-a79d-4818-8d16-2e360f67bb0b/28ad286a-f156-4570-a614-122f36db2ce2/c6d43c11-d9cc-4280-bede-f7b300bdbe50"
+					(reference "DS12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 125.73 71.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "94e5af37-1528-4099-8c1e-eee6fe380da4")
+		(property "Reference" "R22"
+			(at 128.27 69.8499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "47"
+			(at 128.27 72.3899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 123.952 71.12 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 125.73 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 125.73 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "cb2422af-c29c-4abb-b6ee-d49bf2f638c5")
+		)
+		(pin "1"
+			(uuid "849377c5-e75a-4d10-b7a2-8e1150371634")
+		)
+		(instances
+			(project "RelogioGRS"
+				(path "/c5089fae-3fc0-463b-a1cd-29d25b5e00c5/88c473a8-a79d-4818-8d16-2e360f67bb0b/28ad286a-f156-4570-a614-122f36db2ce2/c6d43c11-d9cc-4280-bede-f7b300bdbe50"
+					(reference "R22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 24.13 71.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9573d7e0-14e4-4dcf-ab30-7e648c1575c6")
+		(property "Reference" "R31"
+			(at 26.67 69.8499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "390(Verificar)"
+			(at 26.67 72.3899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 22.352 71.12 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 24.13 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 24.13 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "1186e08e-b7ae-4cb7-b5f2-cd3d3fa63985")
+		)
+		(pin "1"
+			(uuid "685e7cc2-2b86-42e5-9ffd-896cd4c179b3")
+		)
+		(instances
+			(project "RelogioGRS"
+				(path "/c5089fae-3fc0-463b-a1cd-29d25b5e00c5/88c473a8-a79d-4818-8d16-2e360f67bb0b/28ad286a-f156-4570-a614-122f36db2ce2/c6d43c11-d9cc-4280-bede-f7b300bdbe50"
+					(reference "R31")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RelogioGRS_Library:WCN1-00D0SR-C11S")
+		(at 91.44 44.45 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9faff5cc-63d1-47de-84a6-b695b42899f2")
+		(property "Reference" "DS10"
+			(at 91.44 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WCN1-00D0SR-C11S"
+			(at 91.44 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 91.44 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 91.44 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "7-Segment LED Display, 4.0 pol., Super Red, Common Cathode, 10 pin"
+			(at 91.44 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "b110b3bd-b4f8-4d30-a8bc-0b3b70f08e27")
+		)
+		(pin "4"
+			(uuid "cbaa60b4-d06a-4f21-9336-083c4ea17c16")
+		)
+		(pin "7"
+			(uuid "ed491c31-02c3-4dfa-a4cd-bf06414a8428")
+		)
+		(pin "2"
+			(uuid "11866b0f-5d8e-475c-90a0-05e319ee5405")
+		)
+		(pin "6"
+			(uuid "b7c772a6-5a26-4264-9471-86bdb315eb34")
+		)
+		(pin "5"
+			(uuid "bab01e7e-08df-4dc1-b0fe-ee069a0b534e")
+		)
+		(pin "1"
+			(uuid "d84240e3-ea74-4910-a4e8-6867a7b216c8")
+		)
+		(pin "10"
+			(uuid "4b644333-d7f8-438e-bfee-f1f25dfd11a8")
+		)
+		(pin "9"
+			(uuid "5918a1e5-e706-4304-a02a-8eb85233ee24")
+		)
+		(pin "8"
+			(uuid "a9001f44-4494-489b-ad8e-a1c4f161329d")
+		)
+		(instances
+			(project "RelogioGRS"
+				(path "/c5089fae-3fc0-463b-a1cd-29d25b5e00c5/88c473a8-a79d-4818-8d16-2e360f67bb0b/28ad286a-f156-4570-a614-122f36db2ce2/c6d43c11-d9cc-4280-bede-f7b300bdbe50"
+					(reference "DS10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RelogioGRS_Library:WCN1-00D0SR-C11S")
+		(at 138.43 31.75 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c3bbadef-fd90-4bd9-becd-f851ff7b5e84")
+		(property "Reference" "DS11"
+			(at 138.43 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WCN1-00D0SR-C11S"
+			(at 138.43 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 138.43 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 138.43 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "7-Segment LED Display, 4.0 pol., Super Red, Common Cathode, 10 pin"
+			(at 138.43 17.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "6a79031c-7aee-450c-b58d-542c942618bd")
+		)
+		(pin "4"
+			(uuid "08042738-858d-4a44-9c0a-ba7572d24e4a")
+		)
+		(pin "7"
+			(uuid "79c40456-266c-4b95-9f1a-7673d3f21be3")
+		)
+		(pin "2"
+			(uuid "92b3290a-b067-46e7-9098-1bad60363fcd")
+		)
+		(pin "6"
+			(uuid "6bb9f006-9bae-48eb-ac9c-185841b5fd4f")
+		)
+		(pin "5"
+			(uuid "cdad54ce-552f-4c14-9ff0-69ee81f90452")
+		)
+		(pin "1"
+			(uuid "7e0e0e24-5f1a-435e-9816-30b583acca07")
+		)
+		(pin "10"
+			(uuid "40ae0703-9628-4f8f-97e9-9bab7298e562")
+		)
+		(pin "9"
+			(uuid "a5023278-84b5-4b52-9bf5-44fa6fdba93a")
+		)
+		(pin "8"
+			(uuid "47d7585e-dda6-4087-bf82-aea4280581c2")
+		)
+		(instances
+			(project "RelogioGRS"
+				(path "/c5089fae-3fc0-463b-a1cd-29d25b5e00c5/88c473a8-a79d-4818-8d16-2e360f67bb0b/28ad286a-f156-4570-a614-122f36db2ce2/c6d43c11-d9cc-4280-bede-f7b300bdbe50"
+					(reference "DS11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 69.85 71.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c9829c2a-d5e5-4c0e-b260-48852a48fa33")
+		(property "Reference" "R14"
+			(at 72.39 69.8499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "33"
+			(at 72.39 72.3899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 68.072 71.12 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 69.85 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 69.85 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "353e3647-4a45-4be6-9159-1eb7280fd879")
+		)
+		(pin "1"
+			(uuid "e9d4cdb7-f61a-4392-a2b4-a05a929381ae")
+		)
+		(instances
+			(project "RelogioGRS"
+				(path "/c5089fae-3fc0-463b-a1cd-29d25b5e00c5/88c473a8-a79d-4818-8d16-2e360f67bb0b/28ad286a-f156-4570-a614-122f36db2ce2/c6d43c11-d9cc-4280-bede-f7b300bdbe50"
+					(reference "R14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 52.07 71.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ce81070f-7138-4c7a-965f-e1ce77b4c0a7")
+		(property "Reference" "R12"
+			(at 54.61 69.8499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "33"
+			(at 54.61 72.3899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 50.292 71.12 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 52.07 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 52.07 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "a0693da5-5e5e-4961-b182-f73f05ecf4c1")
+		)
+		(pin "1"
+			(uuid "54cd787d-b84c-49c3-a20a-5aba7151b7ca")
+		)
+		(instances
+			(project "RelogioGRS"
+				(path "/c5089fae-3fc0-463b-a1cd-29d25b5e00c5/88c473a8-a79d-4818-8d16-2e360f67bb0b/28ad286a-f156-4570-a614-122f36db2ce2/c6d43c11-d9cc-4280-bede-f7b300bdbe50"
+					(reference "R12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RelogioGRS_Library:WCN1-00D0SR-C11S")
+		(at 220.98 31.75 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e9148a55-c2f6-4090-9022-4e0ea278683b")
+		(property "Reference" "DS13"
+			(at 220.98 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WCN1-00D0SR-C11S"
+			(at 220.98 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 220.98 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 220.98 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "7-Segment LED Display, 4.0 pol., Super Red, Common Cathode, 10 pin"
+			(at 220.98 17.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "96c02b77-ea4a-4f94-bb9b-e2955c509a3b")
+		)
+		(pin "4"
+			(uuid "2a7e3ef6-fe19-42b9-8f4c-d0f777757fb4")
+		)
+		(pin "7"
+			(uuid "ee575d1c-e1f9-4ad6-8d49-e8bdf78b05f6")
+		)
+		(pin "2"
+			(uuid "55ea5703-b066-45b3-8ce4-6b4da6276d64")
+		)
+		(pin "6"
+			(uuid "a9f061ce-8777-4e0f-8e1e-f9367e0ed3a1")
+		)
+		(pin "5"
+			(uuid "da3f8fa6-4595-45f7-8755-5e4dbde21492")
+		)
+		(pin "1"
+			(uuid "1e0730d4-f60c-4a71-8f2b-154499899542")
+		)
+		(pin "10"
+			(uuid "099d3005-9d09-4e06-a3c2-026a4932a916")
+		)
+		(pin "9"
+			(uuid "7954a0fb-7d1d-436c-b842-ebb149add303")
+		)
+		(pin "8"
+			(uuid "7ff3ffb7-1e27-4ae9-9b33-f57c7e6252ff")
+		)
+		(instances
+			(project "RelogioGRS"
+				(path "/c5089fae-3fc0-463b-a1cd-29d25b5e00c5/88c473a8-a79d-4818-8d16-2e360f67bb0b/28ad286a-f156-4570-a614-122f36db2ce2/c6d43c11-d9cc-4280-bede-f7b300bdbe50"
+					(reference "DS13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "RelogioGRS_Library:WCN1-00D0SR-C11S")
+		(at 256.54 44.45 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f06f5e18-8148-407a-9176-c3a0db6f5224")
+		(property "Reference" "DS14"
+			(at 256.54 21.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "WCN1-00D0SR-C11S"
+			(at 256.54 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 256.54 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 256.54 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "7-Segment LED Display, 4.0 pol., Super Red, Common Cathode, 10 pin"
+			(at 256.54 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "2e254fc0-b35a-47d8-8ac1-8e88485bef15")
+		)
+		(pin "4"
+			(uuid "1f259844-229b-4e02-b770-da9c718cf767")
+		)
+		(pin "7"
+			(uuid "d1173c40-e83b-4d9c-b132-cbd03b8c0fc7")
+		)
+		(pin "2"
+			(uuid "609e045e-396f-4707-90ed-bf1cf55a0e7d")
+		)
+		(pin "6"
+			(uuid "7952a06d-290b-4cb2-be3f-c6e67afd14f7")
+		)
+		(pin "5"
+			(uuid "843c4520-3355-4bbf-91e2-726f7fa40b38")
+		)
+		(pin "1"
+			(uuid "238d4862-c556-47a0-9148-79cfea4c4c68")
+		)
+		(pin "10"
+			(uuid "54ba2291-7985-49bb-bea8-ffc3d2264ff6")
+		)
+		(pin "9"
+			(uuid "f6d76c3d-c2ef-4f65-8f93-eadc5855ab5c")
+		)
+		(pin "8"
+			(uuid "7fd42784-1c35-4853-bdc3-32916a2aa23e")
+		)
+		(instances
+			(project "RelogioGRS"
+				(path "/c5089fae-3fc0-463b-a1cd-29d25b5e00c5/88c473a8-a79d-4818-8d16-2e360f67bb0b/28ad286a-f156-4570-a614-122f36db2ce2/c6d43c11-d9cc-4280-bede-f7b300bdbe50"
+					(reference "DS14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 170.18 71.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f8f3ceb7-6a83-4d8f-b004-bd67934fd20b")
+		(property "Reference" "R26"
+			(at 172.72 69.8499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "47"
+			(at 172.72 72.3899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 168.402 71.12 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 170.18 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 170.18 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "8158f514-685e-43de-845a-a621df8eeb14")
+		)
+		(pin "1"
+			(uuid "29ce727f-5022-4ec1-befb-039c3c59ea0c")
+		)
+		(instances
+			(project "RelogioGRS"
+				(path "/c5089fae-3fc0-463b-a1cd-29d25b5e00c5/88c473a8-a79d-4818-8d16-2e360f67bb0b/28ad286a-f156-4570-a614-122f36db2ce2/c6d43c11-d9cc-4280-bede-f7b300bdbe50"
+					(reference "R26")
+					(unit 1)
+				)
+			)
+		)
+	)
+)

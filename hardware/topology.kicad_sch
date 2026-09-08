@@ -1,0 +1,378 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "842cafce-e7ec-49d8-829a-9f4244bd945d")
+	(paper "A4")
+	(lib_symbols)
+	(sheet
+		(at 129.54 30.48)
+		(size 35.56 25.4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "28a2b920-3fc1-421d-ada7-f5d83952cd0c")
+		(property "Sheetname" "ESP32-C3-DevKitM-1"
+			(at 129.54 29.7684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "ESP32-C3-DevKitM-1.kicad_sch"
+			(at 129.54 56.4646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "RelogioGRS"
+				(path "/c5089fae-3fc0-463b-a1cd-29d25b5e00c5/88c473a8-a79d-4818-8d16-2e360f67bb0b/28ad286a-f156-4570-a614-122f36db2ce2"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 81.28 30.48)
+		(size 35.56 25.4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "59a8d674-adb8-4c09-b7c3-2a04b064620e")
+		(property "Sheetname" "max7219"
+			(at 81.28 29.7684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "max7219.kicad_sch"
+			(at 81.28 56.4646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "RelogioGRS"
+				(path "/c5089fae-3fc0-463b-a1cd-29d25b5e00c5/88c473a8-a79d-4818-8d16-2e360f67bb0b/28ad286a-f156-4570-a614-122f36db2ce2"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 33.02 91.44)
+		(size 71.12 27.94)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "702bc2b9-968a-4ae0-a60a-f39b92d4769b")
+		(property "Sheetname" "Power Supply"
+			(at 33.02 90.7284 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Power Supply.kicad_sch"
+			(at 33.02 119.9646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "RelogioGRS"
+				(path "/c5089fae-3fc0-463b-a1cd-29d25b5e00c5/88c473a8-a79d-4818-8d16-2e360f67bb0b/28ad286a-f156-4570-a614-122f36db2ce2"
+					(page "8")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 35.56 30.48)
+		(size 35.56 25.4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "c6d43c11-d9cc-4280-bede-f7b300bdbe50")
+		(property "Sheetname" "display7seg"
+			(at 35.56 29.7684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "display7seg.kicad_sch"
+			(at 35.56 56.4646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "A_7Seg" input
+			(at 71.12 34.29 0)
+			(uuid "e9cb3305-f883-4298-914c-14122b96d5a6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "B_7Seg" input
+			(at 71.12 36.83 0)
+			(uuid "2d478037-a420-4456-b490-bb4460052333")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "C_7Seg" input
+			(at 71.12 39.37 0)
+			(uuid "b8e88bea-5f18-478a-a9b7-c901216cf6c1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "Display1Gnd" input
+			(at 35.56 34.29 180)
+			(uuid "ed3ed099-314f-441a-8e36-1cd8be44a334")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "Display2Gnd" input
+			(at 35.56 36.83 180)
+			(uuid "dd128e79-b0a0-437f-9f97-e6a174d3870c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "Display3Gnd" input
+			(at 35.56 39.37 180)
+			(uuid "3318d025-5676-472c-9978-bf422e512b1c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "Display4Gnd" input
+			(at 35.56 41.91 180)
+			(uuid "4ab74394-ba72-4b2a-bc9e-58bc114be45c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "Display5Gnd" input
+			(at 35.56 44.45 180)
+			(uuid "3cd5ac34-b561-4390-b7ff-4aea0cb6db37")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "Display6Gnd" input
+			(at 35.56 46.99 180)
+			(uuid "928b0ea4-faa2-4196-a577-1bacb3967f01")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "Display7Gnd" input
+			(at 35.56 49.53 180)
+			(uuid "ed5dc618-8bc7-42e5-97ee-1a867ba43dfb")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "Display8Gnd" input
+			(at 35.56 52.07 180)
+			(uuid "5f006ba5-07dd-40b9-a15a-ac46011a95b4")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "DP_7Seg" input
+			(at 71.12 52.07 0)
+			(uuid "2b1eb53b-5f0f-4556-ba81-39632f2b65fd")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "D_7Seg" input
+			(at 71.12 41.91 0)
+			(uuid "3e948b04-0feb-4666-952f-fcdf5d10605d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "E_7Seg" input
+			(at 71.12 44.45 0)
+			(uuid "29a46cd8-7e5f-4f9e-94e2-168356b9e52c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "F_7Seg" input
+			(at 71.12 46.99 0)
+			(uuid "e41508f9-2d5c-4004-8273-867c187ec73d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "G_7Seg" input
+			(at 71.12 49.53 0)
+			(uuid "26f12546-c65c-401e-8d29-8bb433925493")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "RelogioGRS"
+				(path "/c5089fae-3fc0-463b-a1cd-29d25b5e00c5/88c473a8-a79d-4818-8d16-2e360f67bb0b/28ad286a-f156-4570-a614-122f36db2ce2"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 177.8 30.48)
+		(size 33.02 25.4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "fce5a9e1-4607-4e47-ab78-e925132609cf")
+		(property "Sheetname" "RTC_module\\TEMP_module"
+			(at 177.8 29.7684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "RTC_module/TEMP_module.kicad_sch"
+			(at 177.8 56.4646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "RelogioGRS"
+				(path "/c5089fae-3fc0-463b-a1cd-29d25b5e00c5/88c473a8-a79d-4818-8d16-2e360f67bb0b/28ad286a-f156-4570-a614-122f36db2ce2"
+					(page "7")
+				)
+			)
+		)
+	)
+)
