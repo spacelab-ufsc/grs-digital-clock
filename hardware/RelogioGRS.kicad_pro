@@ -635,12 +635,12 @@
       "ESP32-C3-DevKitM-1"
     ],
     [
-      "fce5a9e1-4607-4e47-ab78-e925132609cf",
-      "RTC_module\\TEMP_module"
-    ],
-    [
       "702bc2b9-968a-4ae0-a60a-f39b92d4769b",
       "Power Supply"
+    ],
+    [
+      "b105b188-27bb-4fad-8ab8-a7d8fdf96ac5",
+      "RTC-Sensor"
     ]
   ],
   "text_variables": {}
