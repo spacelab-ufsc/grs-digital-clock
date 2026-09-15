@@ -5,6 +5,46 @@
 	(uuid "305750be-a747-43ae-9d84-6d7317218236")
 	(paper "A4")
 	(lib_symbols)
+	(wire
+		(pts
+			(xy 81.28 43.18) (xy 91.44 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3aee46c6-e50c-4cb5-95b3-6a2eb132f54e")
+	)
+	(wire
+		(pts
+			(xy 81.28 50.8) (xy 91.44 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a1037222-4c6d-480f-b302-0e459273fdb5")
+	)
+	(wire
+		(pts
+			(xy 81.28 48.26) (xy 91.44 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "de3231e5-42a0-4e71-a721-0984439488cb")
+	)
+	(wire
+		(pts
+			(xy 81.28 45.72) (xy 91.44 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f5d8db19-28bb-414e-8abb-62d9eac441da")
+	)
 	(sheet
 		(at 30.48 35.56)
 		(size 50.8 76.2)
@@ -39,10 +79,132 @@
 				(justify left top)
 			)
 		)
+		(pin "12V Vin" input
+			(at 81.28 43.18 0)
+			(uuid "abb96e6d-7114-4d08-8e09-913e40a8d2c7")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "GND" input
+			(at 81.28 45.72 0)
+			(uuid "529ee18f-fac5-4226-88ff-720ee2b0effd")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "USB Data Minus" input
+			(at 81.28 50.8 0)
+			(uuid "d3068d69-c3ec-40ae-9baa-13d01f077575")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "USB Data Plus" input
+			(at 81.28 48.26 0)
+			(uuid "6d52ba22-0223-42cb-a38a-8fb949257510")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
 		(instances
 			(project "RelogioGRS"
 				(path "/c5089fae-3fc0-463b-a1cd-29d25b5e00c5/88c473a8-a79d-4818-8d16-2e360f67bb0b"
 					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 91.44 35.56)
+		(size 55.88 76.2)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "77407e30-084b-4a72-bec0-74f7ba0e7775")
+		(property "Sheetname" "External Connections"
+			(at 91.44 34.8484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "External Connections.kicad_sch"
+			(at 91.44 112.3446 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "12V Vin" input
+			(at 91.44 43.18 180)
+			(uuid "5c86e492-5dae-4d9b-bc92-3e28b8c4905c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "GND" input
+			(at 91.44 45.72 180)
+			(uuid "74a7b9a2-6606-45ae-bd0d-1a39ba7e0574")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "USB Data Minus" input
+			(at 91.44 50.8 180)
+			(uuid "851d8570-43e8-410b-acc9-28069901af1a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "USB Data Plus" input
+			(at 91.44 48.26 180)
+			(uuid "036a9ce7-d068-4fd2-b8e5-2ced02c282f4")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "RelogioGRS"
+				(path "/c5089fae-3fc0-463b-a1cd-29d25b5e00c5/88c473a8-a79d-4818-8d16-2e360f67bb0b"
+					(page "9")
 				)
 			)
 		)

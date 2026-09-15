@@ -5,4 +5,229 @@
 	(uuid "d408768d-447a-44db-8868-5951b18279e5")
 	(paper "A4")
 	(lib_symbols)
+	(text "EXTERNAL CONNECTIONS"
+		(exclude_from_sim no)
+		(at 54.864 150.876 0)
+		(effects
+			(font
+				(size 2.3 2.3)
+			)
+		)
+		(uuid "71957ca8-2b76-4407-bdaa-6cfe373c7b17")
+	)
+	(text "POWER"
+		(exclude_from_sim no)
+		(at 52.07 156.718 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "a2a84fb0-473d-4b7b-928a-034207979abb")
+	)
+	(text "I2C"
+		(exclude_from_sim no)
+		(at 50.8 175.006 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "ee2feeae-c315-4cb7-9726-cb7e9a05da52")
+	)
+	(bus
+		(pts
+			(xy 85.09 144.78) (xy 85.09 187.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "18280eac-05a4-4f27-ac71-769da96ea64c")
+	)
+	(wire
+		(pts
+			(xy 35.56 163.83) (xy 60.96 163.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7d574361-2eb9-4d8c-9e2b-fbbd60368f61")
+	)
+	(wire
+		(pts
+			(xy 35.56 161.29) (xy 60.96 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "883942de-e1ad-4e9e-b557-4e7612677c05")
+	)
+	(bus
+		(pts
+			(xy 85.09 187.96) (xy 22.86 187.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9662951e-d83a-4eb5-a9ef-800f4bb8c2de")
+	)
+	(wire
+		(pts
+			(xy 35.56 166.37) (xy 60.96 166.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b8392536-da6d-4a90-ab89-9785b6178776")
+	)
+	(wire
+		(pts
+			(xy 35.56 180.34) (xy 60.96 180.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c1e04067-388b-45b4-a599-afbb3cd71b12")
+	)
+	(wire
+		(pts
+			(xy 35.56 177.8) (xy 60.96 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e37f8d38-466d-4d55-b250-f07c9ec4ba9f")
+	)
+	(bus
+		(pts
+			(xy 22.86 144.78) (xy 85.09 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fe5fa266-c7dc-46af-9c20-1f84115d74db")
+	)
+	(bus
+		(pts
+			(xy 22.86 144.78) (xy 22.86 187.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ff6e0174-3427-41b0-b3b8-cc0b1f14132f")
+	)
+	(label "5V"
+		(at 35.56 163.83 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1b2d99e8-5109-4d6b-b6d0-eda184d5919c")
+	)
+	(label "SDA"
+		(at 35.56 177.8 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2091e578-becc-4b8c-b97a-c416ce284f96")
+	)
+	(label "3,3V"
+		(at 35.56 166.37 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6e178fb5-c267-438d-853f-481eb9009bc0")
+	)
+	(label "SCL"
+		(at 35.56 180.34 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7bbcb64e-7632-4717-b8b8-7813aac83385")
+	)
+	(label "GND"
+		(at 35.56 161.29 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "bf00ab87-22ef-4b1d-b307-7c7085403f9b")
+	)
+	(hierarchical_label "GND"
+		(shape input)
+		(at 60.96 161.29 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "07874eb1-0bce-44fb-b421-c9a39df124d0")
+	)
+	(hierarchical_label "I2C SCL"
+		(shape input)
+		(at 60.96 180.34 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "25023439-c6e9-4d85-a30b-076d3cba8f85")
+	)
+	(hierarchical_label "5V"
+		(shape input)
+		(at 60.96 163.83 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a21a08bd-c398-4a83-9671-278652e4c7d9")
+	)
+	(hierarchical_label "I2C SDA"
+		(shape input)
+		(at 60.96 177.8 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a5520e76-c45a-48cf-ba94-15121b9c9ca9")
+	)
+	(hierarchical_label "3,3V"
+		(shape input)
+		(at 60.96 166.37 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f4d252f4-83d2-4277-90cc-8fac62703eb4")
+	)
 )

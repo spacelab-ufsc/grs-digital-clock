@@ -5,4 +5,188 @@
 	(uuid "ee24357d-de7f-4e5a-9527-dbf7ef39d091")
 	(paper "A4")
 	(lib_symbols)
+	(text "POWER"
+		(exclude_from_sim no)
+		(at 52.07 169.418 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "13e9a258-9c16-4dee-beb5-65019a33926a")
+	)
+	(text "EXTERNAL CONNECTIONS"
+		(exclude_from_sim no)
+		(at 54.864 163.576 0)
+		(effects
+			(font
+				(size 2.3 2.3)
+			)
+		)
+		(uuid "32ffab67-0a13-40c0-a415-779635cbc02b")
+	)
+	(wire
+		(pts
+			(xy 35.56 173.99) (xy 60.96 173.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "062ccfe3-0356-45ec-900d-57dc94adffb7")
+	)
+	(wire
+		(pts
+			(xy 35.56 179.07) (xy 60.96 179.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "50dd7d4b-178f-49fb-8a72-cd71c1c18c20")
+	)
+	(wire
+		(pts
+			(xy 35.56 176.53) (xy 60.96 176.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "52629640-4838-4492-bda2-6506e22fe5f5")
+	)
+	(wire
+		(pts
+			(xy 35.56 181.61) (xy 60.96 181.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "70b5a110-c0ba-4d90-834b-78170f0152c2")
+	)
+	(bus
+		(pts
+			(xy 83.82 156.21) (xy 83.82 190.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7fd6a22f-aec8-442b-8700-a1c22c234f15")
+	)
+	(bus
+		(pts
+			(xy 22.86 156.21) (xy 83.82 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9236f8f0-d522-4d3c-97d7-bc27d68cdaad")
+	)
+	(bus
+		(pts
+			(xy 83.82 190.5) (xy 22.86 190.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "abf7e819-726f-4e42-8a43-518a4d6c5f54")
+	)
+	(bus
+		(pts
+			(xy 22.86 190.5) (xy 22.86 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b166a152-a6e1-456c-8b83-f22bd591cff2")
+	)
+	(label "12V Vin"
+		(at 35.56 181.61 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4680ede4-8cfc-40f2-977b-2fc81be582b1")
+	)
+	(label "12V"
+		(at 35.56 179.07 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8f13a602-6198-4f21-9ea9-dc4498359424")
+	)
+	(label "GND"
+		(at 35.56 173.99 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b984b819-e260-48cc-9811-7abe5f4db76c")
+	)
+	(label "5V"
+		(at 35.56 176.53 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "bca8d423-1954-44d1-ae7d-bf93bdeb54ae")
+	)
+	(hierarchical_label "12V"
+		(shape input)
+		(at 60.96 179.07 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "306e16a1-d126-4400-ad93-f6144d320703")
+	)
+	(hierarchical_label "12V Vin"
+		(shape input)
+		(at 60.96 181.61 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "5039fc08-7d0a-47a4-af0d-26f15e359834")
+	)
+	(hierarchical_label "GND"
+		(shape input)
+		(at 60.96 173.99 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "6099bfc2-fbc4-4b9e-b19b-ed20825cc5f3")
+	)
+	(hierarchical_label "5V"
+		(shape input)
+		(at 60.96 176.53 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "6f30c3c3-7120-417c-addb-e605b95f5aef")
+	)
 )

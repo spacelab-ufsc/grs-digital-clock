@@ -641,6 +641,10 @@
     [
       "b105b188-27bb-4fad-8ab8-a7d8fdf96ac5",
       "RTC-Sensor"
+    ],
+    [
+      "77407e30-084b-4a72-bec0-74f7ba0e7775",
+      "External Connections"
     ]
   ],
   "text_variables": {}

@@ -4410,7 +4410,7 @@
 		)
 		(uuid "123a647b-be44-435f-92d4-7af2cdaa3c2e")
 	)
-	(hierarchical_label "SCK"
+	(hierarchical_label "SCK (CLK)"
 		(shape input)
 		(at 59.69 132.08 0)
 		(effects
@@ -4509,7 +4509,7 @@
 		)
 		(uuid "7842650c-08fe-4a10-a251-ff02da5b0fdd")
 	)
-	(hierarchical_label "MOSI"
+	(hierarchical_label "MOSI (DIN)"
 		(shape input)
 		(at 59.69 129.54 0)
 		(effects
@@ -4520,7 +4520,7 @@
 		)
 		(uuid "7a2b399a-a555-4bdd-bcad-f4a07889a231")
 	)
-	(hierarchical_label "CS"
+	(hierarchical_label "CS (LOAD)"
 		(shape input)
 		(at 59.69 134.62 0)
 		(effects
